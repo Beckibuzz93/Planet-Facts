@@ -1,18 +1,31 @@
+import { Routes, Route } from 'react-router-dom'
 
-//const styles = ({ isActive }) => ({ color: isActive ? '#000000' : '#929292' });
+import { NavBar } from './components'
+
+import * as Pages from './pages'
 
 function App() {
 
   return (
     <>
-    <h1> App </h1>
-    <h2> App </h2>
-    <h3> App </h3>
-    <h4> App </h4>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nesciunt mollitia officia commodi odio rem dolore fuga ratione aliquam doloribus. Deleniti veritatis vitae atque suscipit itaque, corrupti fugit? Quasi, molestiae!</p>
+    <Routes>
+      <Route path="/" element={<NavBar/>}>
+        <Route index element={<Pages.LandingPage/>}></Route>
+        <Route path="/Mercury" element={<Pages.Mercury/>}></Route>
+        <Route path="/Venus" element={<Pages.Venus/>}></Route>
+        <Route path="/Earth" element={<Pages.Earth/>}></Route>
+        <Route path="/Mars" element={<Pages.Mars/>}></Route>
+        <Route path="/Jupiter" element={<Pages.Jupiter/>}></Route>
+        <Route path="/Saturn" element={<Pages.Saturn/>}></Route>
+        <Route path="/Uranus" element={<Pages.Uranus/>}></Route>
+        <Route path="/Neptune" element={<Pages.Neptune/>}></Route>
+        <Route path = "*" element={<Pages.PageNotFound/>}></Route>
+      </Route>
+    </Routes>
     </>
   )
 }
 
 export default App
+
+
