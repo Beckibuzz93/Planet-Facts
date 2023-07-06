@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #979797;
+    height: 10vh;
+}
+header .icon h5 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    line-height: 1.78rem;
+    letter-spacing: 1px;
+}
+
+.burger-nav {
+    display: none;
+}
+.burger-line {
+    border-bottom: 3px solid #fff;
+    width: 2rem;
+    margin: 0.3rem;
+}
+.burger-nav-items {
+    display: none;
+}
+
+
+@media only screen and (max-width: 400px) {
+    header .navigation {
+        display: none;
+    }
+    .burger-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    }
+    .burger-nav-items.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        width: 40vw;
+        background-color: #9BE3C0;
+        border-top: 1px solid #42af7a;
+        border-bottom: 1px solid #42af7a;
+        border-left: 1px solid #42af7a;
+        z-index: 2;
+        position: relative;
+    }
+    .burger-nav-items.active a{
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0.5rem;
+    }
+    .burger-nav-items.active a:hover {
+        border-bottom: 1px solid #42af7a;
+    }
+}

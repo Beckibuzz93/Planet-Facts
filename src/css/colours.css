@@ -1,0 +1,54 @@
+/***** WHITE *****/
+.white-bg {
+    background-color: #FFF;
+}
+
+/***** BLUE *****/
+.dark-blue-bg {
+    background-color: #070724;
+}
+
+.light-blue-bg {
+    background-color: #2D68F0;
+}
+
+.baby-blue-bg {
+    background-color: #419EBB;
+}
+
+/***** PURPLE *****/
+.dark-purple-bg {
+    background-color: #38384F;
+}
+.light-purple-bg {
+    background-color: #6f2ed6;
+}
+
+/***** GREY *****/
+.grey-bg {
+    background-color: #838391;
+}
+
+/***** YELLOW *****/
+.yellow-bg {
+    background-color: #EDA249;
+}
+
+/***** ORANGE *****/
+.orange-bg{ 
+    background-color: #CD5120;
+}
+
+.dark-orange-bg {
+    background-color: #D14C32;
+}
+
+/***** ORANGE *****/
+.red-bg {
+    background-color: #D83A34;
+}
+
+/***** GREEN *****/
+.green-bg {
+    background-color: #1ec2a4;
+}
