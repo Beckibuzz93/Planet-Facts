@@ -1,14 +1,126 @@
-nav {
+@import url(../../css//colours.css); 
+header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid #979797;
-    border: 1px solid yellow;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
     height: 10vh;
+}
+header .icon h5 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+header .navigation {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-decoration: none;
+    line-height: 1.78rem;
+    letter-spacing: 1px;
+}
+
+.burger-nav {
+    display: none;
+}
+.burger-line {
+    border-bottom: 2px solid #fff;
+    width: 2rem;
+    margin: 0.24rem;
+}
+.burger-nav-items {
+    display: none;
+}
+
+
+.ball {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+.arrow-right {
+    width: 6px;
+    height: 6px;
+    border-bottom: 1.5px solid rgb(218, 214, 214);
+    border-right: 1.5px solid rgb(211, 209, 209);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.burger-nav-items.active ul {
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+}
+.burger-nav-items.active ul li {
+    list-style: none;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(151, 151, 151, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+.burger-nav-items.active ul li:nth-child(1) {
+    border-top: none;
+}
+.burger-nav-items.active ul li div {
+    display: flex;
+}
+
+.burger-nav-items.active a{
+    font-family: 'League_Spartan';
+    font-weight: 600;
+    letter-spacing: 1.36px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4px;
+
+}
+.burger-nav-items.active a:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+    header .navigation {
+        display: none;
+    }
+    .burger-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    }
+    .burger-nav-items.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        margin-top: 10.1vh;
+        width: 100%;
+        height: 80%;
+        background-color: #070724;
+    }
+
 }
