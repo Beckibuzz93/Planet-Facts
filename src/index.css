@@ -63,5 +63,11 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  font-family: 'Antonio', Medium;
+  line-height: 1.78rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 
