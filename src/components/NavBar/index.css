@@ -1,4 +1,6 @@
 @import url(../../css//colours.css); 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -29,9 +31,15 @@ nav a {
 
 .burger-nav {
     display: none;
+    cursor: pointer;
 }
-.burger-line {
+.burger-line.unclicked {
     border-bottom: 2px solid #fff;
+    width: 2rem;
+    margin: 0.24rem;
+}
+.burger-line.clicked {
+    border-bottom: 2px solid rgb(151, 151, 151);
     width: 2rem;
     margin: 0.24rem;
 }
@@ -64,7 +72,6 @@ nav a {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
 }
-
 .burger-nav-items.active ul {
     width: 90%;
     height: 100%;
@@ -73,9 +80,10 @@ nav a {
 .burger-nav-items.active ul li {
     list-style: none;
     padding: 1.5rem;
-    border-top: 1px solid rgba(151, 151, 151, 0.2);
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
 }
 .burger-nav-items.active ul li:nth-child(1) {
     border-top: none;
@@ -83,32 +91,33 @@ nav a {
 .burger-nav-items.active ul li div {
     display: flex;
 }
-
 .burger-nav-items.active a{
+    text-decoration: none;
+}
+.burger-nav-items.active p{
     font-family: 'League_Spartan';
     font-weight: 600;
     letter-spacing: 1.36px;
-    text-decoration: none;
     font-size: 1.2rem;
     margin-left: 1rem;
     text-transform: uppercase;
-    text-align: center;
     margin-top: 4px;
-
 }
-.burger-nav-items.active a:hover {
+.burger-nav-items.active ul li:hover {
+    background-color: #0a0a35;
     color: #fff;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 760px) {
     header .navigation {
         display: none;
     }
     .burger-nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-    margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        justify-content: center;
+        height: 100%;
     }
     .burger-nav-items.active{
         display: flex;
@@ -122,5 +131,55 @@ nav a {
         height: 80%;
         background-color: #070724;
     }
+}
 
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    header .icon h5 {
+        margin-top: 2.5rem;
+        font-size: 2rem;
+        justify-content: center;
+        width: 100%;
+    }
+    header .navigation {
+        margin-top: 2.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+    nav a {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+        height: 10vh;
+    }
+    header .icon h5 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    header .navigation {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav a {
+        margin: 1rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        line-height: 1.78rem;
+        letter-spacing: 1px;
+    }
 }

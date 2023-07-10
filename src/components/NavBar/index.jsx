@@ -6,9 +6,19 @@ import './index.css'
 const styles = ({ isActive }) => ({ color: isActive ? '#FFF' : '#929292' });
 
 const NavBar = () => {
-    const [burgerNav, setBurgerNav] = useState(false);
+    const [isMenuClicked, setMenuClicked] = useState(false);
+    const [burgerClass, setBurgerClass] = useState('burger-line unclicked');
+    const [menuClass, setMenuClass] = useState('burger-nav-items');
+
     const BurgerNavClick = () => {
-      setBurgerNav(!burgerNav);
+        if(!isMenuClicked) {
+            setBurgerClass('burger-line unclicked')
+            setMenuClass('burger-nav-items')
+        } else {
+            setBurgerClass('burger-line clicked')
+            setMenuClass('burger-nav-items active')
+        }
+        setMenuClicked(!isMenuClicked)
     }
     return(
         <>
@@ -29,94 +39,113 @@ const NavBar = () => {
                 </nav>
 
                 <div onClick={BurgerNavClick} className='burger-nav'>
-                    <div className='burger-line'></div>
-                    <div className='burger-line'></div>
-                    <div className='burger-line'></div>
+                    <div className={burgerClass}></div>
+                    <div className={burgerClass}></div>
+                    <div className={burgerClass}></div>
                 </div>
 
-                <div className={`burger-nav-items ${burgerNav && 'active'}`}>
+                <div className={menuClass}>
                     <ul>
-                        <li>
-                            <div>
-                                <div className='ball grey-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/"> Home </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball baby-blue-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Mercury"> Mercury </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball yellow-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Venus"> Venus </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball light-purple-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Earth"> Earth </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball orange-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Mars"> Mars </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball red-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Jupiter"> Jupiter </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball dark-orange-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Saturn"> Saturn </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball green-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Uranus"> Uranus </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div className='ball light-blue-bg'></div>
-                                <NavLink onClick={BurgerNavClick} style={styles} to="/Neptune"> Neptune </NavLink>
-                            </div>
-                            <div className='arrow-container'>
-                                <div className='arrow-right'></div>
-                            </div>
-                        </li>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/"> 
+                            <li>
+                                <div>
+                                    <div className='ball grey-bg'></div>
+                                    <p>Home</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li>
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Mercury">                             
+                            <li>
+                                <div>
+                                    <div className='ball baby-blue-bg'></div>
+                                    <p>Mercury</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Venus"> 
+                            <li>
+                                <div>
+                                    <div className='ball yellow-bg'></div>
+                                    <p>Venus</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Earth"> 
+                            <li>
+                                <div>
+                                    <div className='ball light-purple-bg'></div>
+                                    <p>Earth</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Mars"> 
+                            <li>
+                                <div>
+                                    <div className='ball orange-bg'></div>
+                                    <p>Mars</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Jupiter">
+                            <li>
+                                <div>
+                                    <div className='ball red-bg'></div>
+                                    <p>Jupiter</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Saturn">
+                            <li>
+                                <div>
+                                    <div className='ball dark-orange-bg'></div>
+                                    <p>Saturn</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Uranus">
+                            <li>
+                                <div>
+                                    <div className='ball green-bg'></div>
+                                    <p>Uranus</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        <NavLink onClick={BurgerNavClick} style={styles} to="/Neptune">
+                            <li>
+                                <div>
+                                    <div className='ball light-blue-bg'></div>
+                                    <p>Neptune</p> 
+                                </div>
+                                <div className='arrow-container'>
+                                    <div className='arrow-right'></div>
+                                </div>
+                            </li> 
+                        </NavLink>
+                        
                     </ul>
                 </div>
             </header>
