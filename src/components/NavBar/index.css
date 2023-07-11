@@ -72,6 +72,9 @@ nav a {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
 }
+.burger-nav-items {
+    max-width: 100%;
+}
 .burger-nav-items.active ul {
     width: 90%;
     height: 100%;
@@ -128,7 +131,7 @@ nav a {
         position: absolute;
         margin-top: 10.1vh;
         width: 100%;
-        height: 80%;
+        height: auto;
         background-color: #070724;
     }
 }
