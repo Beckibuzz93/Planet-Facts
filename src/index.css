@@ -20,6 +20,7 @@ body{
   background-size: cover;
   background-color: #070724;
   color: #fff;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -31,13 +32,6 @@ body{
   src: url(./Fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
 
-
-h1 {
-  font-family: 'Antonio', Medium;
-  font-size: 5.7rem;
-  line-height: 7.35rem;
-  text-transform: uppercase;
-}
 
 h2 {
   font-family: 'Antonio', Medium;
@@ -71,3 +65,41 @@ h5 {
 }
 
 
+.main-btn {
+  width: 80%;
+  background: transparent;
+  color: aliceblue;
+  text-transform: uppercase;
+  border: 1px solid rgba(151, 151, 151, 0.2);
+  padding: 1rem 1rem;
+  margin: 0.6rem;
+  cursor: pointer;
+  text-align: start;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.main-btn span {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 760px) {
+  .main-btn {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+  .main-btn {
+    width: 60%;
+    margin: 1rem;
+  }
+
+}
+@media only screen and (min-width: 1300px) {
+  .main-btn {
+    width: 75%;
+    margin: 1.4rem;
+  }
+}
