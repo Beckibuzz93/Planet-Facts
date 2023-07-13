@@ -72,7 +72,6 @@ h5 {
   text-transform: uppercase;
   border: 1px solid rgba(151, 151, 151, 0.2);
   padding: 1rem 1rem;
-  margin: 0.6rem;
   cursor: pointer;
   text-align: start;
   font-weight: 600;
@@ -84,22 +83,7 @@ h5 {
   letter-spacing: 2px;
   margin-right: 1rem;
 }
-@media only screen and (max-width: 760px) {
-  .main-btn {
-    width: 80%;
-  }
+.main-btn:hover {
+  color: rgb(18, 18, 19);
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1300px) {
-  .main-btn {
-    width: 60%;
-    margin: 1rem;
-  }
-
-}
-@media only screen and (min-width: 1300px) {
-  .main-btn {
-    width: 75%;
-    margin: 1.4rem;
-  }
-}
