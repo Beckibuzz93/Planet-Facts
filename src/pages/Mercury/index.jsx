@@ -1,8 +1,11 @@
 import React from 'react'
+
+import {PageNav} from '../../components'
 const Mercury = () => {
   return (
     <>
-        <h1> Mercury </h1>
+        <h2> Mercury </h2>
+        <PageNav overviewLink=''/>
     </>
   )
 }
