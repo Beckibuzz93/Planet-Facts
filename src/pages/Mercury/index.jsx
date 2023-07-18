@@ -1,11 +1,11 @@
 import React from 'react'
 
 import {PageNav} from '../../components'
-const Mercury = () => {
+const Mercury = (props) => {
   return (
     <>
         <h2> Mercury </h2>
-        <PageNav overviewLink=''/>
+        <PageNav pageNav='page-nav mercury'/>
     </>
   )
 }

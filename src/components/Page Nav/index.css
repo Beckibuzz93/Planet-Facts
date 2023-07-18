@@ -1,188 +1,30 @@
-@import url(../../css//colours.css); 
-
-
-header {
-    display: flex;
-    justify-content: space-between;
+.page-nav {
     width: 100%;
-    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
-    height: 10vh;
-}
-header .icon h5 {
-    font-size: 2rem;
+    height: auto;
     display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    justify-content: space-around;
 }
-header .navigation {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    margin: 1rem;
-    font-size: 1.8rem;
-    text-decoration: none;
-    line-height: 1.78rem;
-    letter-spacing: 1px;
-}
-
-.burger-nav {
-    display: none;
-    cursor: pointer;
-}
-.burger-line.unclicked {
-    border-bottom: 2px solid #fff;
-    width: 2rem;
-    margin: 0.24rem;
-}
-.burger-line.clicked {
-    border-bottom: 2px solid rgb(151, 151, 151);
-    width: 2rem;
-    margin: 0.24rem;
-}
-.burger-nav-items {
-    display: none;
-}
-
-
-.ball {
-    width: 1.3rem;
-    height: 1.3rem;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-}
-.arrow-container {
-    display: flex;
-    align-items: center;
-}
-.arrow-right {
-    width: 6px;
-    height: 6px;
-    border-bottom: 1.5px solid rgb(218, 214, 214);
-    border-right: 1.5px solid rgb(211, 209, 209);
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-}
-.burger-nav-items {
-    max-width: 100%;
-}
-.burger-nav-items.active ul {
-    width: 90%;
-    height: 100%;
-    margin-top: 2rem;
-}
-.burger-nav-items.active ul li {
-    list-style: none;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
-}
-.burger-nav-items.active ul li:nth-child(1) {
-    border-top: none;
-}
-.burger-nav-items.active ul li div {
-    display: flex;
-}
-.burger-nav-items.active a{
-    text-decoration: none;
-}
-.burger-nav-items.active p{
+.page-nav a {
     font-family: 'League_Spartan';
-    font-weight: 600;
-    letter-spacing: 1.36px;
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.8px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
     text-transform: uppercase;
-    margin-top: 4px;
 }
-.burger-nav-items.active ul li:hover {
-    background-color: #0a0a35;
-    color: #fff;
+.page-nav.mercury a:hover{
+    border-bottom: 4px solid #419EBB;
 }
 
 @media only screen and (max-width: 760px) {
-    header .navigation {
-        display: none;
-    }
-    .burger-nav {
-        display: flex;
-        flex-direction: column;
-        margin-right: 1rem;
-        justify-content: center;
-        height: 100%;
-    }
-    .burger-nav-items.active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        z-index: 2;
-        position: absolute;
-        margin-top: 10.1vh;
-        width: 100%;
-        height: auto;
-        background-color: #070724;
-    }
+
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    header .icon h5 {
-        margin-top: 2.5rem;
-        font-size: 2rem;
-        justify-content: center;
-        width: 100%;
-    }
-    header .navigation {
-        margin-top: 2.5rem;
-        width: 100%;
-        justify-content: center;
-    }
-    nav a {
-        font-size: 1.2rem;
-    }
+
 }
 @media only screen and (min-width: 1300px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
-        height: 10vh;
-    }
-    header .icon h5 {
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-    header .navigation {
-        display: flex;
-        align-items: center;
-    }
-    
-    nav a {
-        margin: 1rem;
-        font-size: 1.8rem;
-        text-decoration: none;
-        line-height: 1.78rem;
-        letter-spacing: 1px;
-    }
+
 }
