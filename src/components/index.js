@@ -8,3 +8,4 @@ export { default as MainStatement } from './MainStatement'
 /* For planets pages */
 export { default as PageMainTitle } from './PageMainTitle'
 export { default as PageNav } from './Page Nav'
+export { default as PageMainImage } from './PageMainImage'
