@@ -1,10 +1,10 @@
 import React from 'react'
-import {PageNav} from '../../components'
+import * as Components from '../../components'
 const Jupiter = () => {
   return (
     <>
-        <h1> Jupiter </h1>
-        <PageNav pageNav='page-nav jupiter'/>
+        <Components.PageMainTitle pageMainTitle='Jupiter' />
+        <Components.PageNav pageNav='page-nav jupiter'/>
     </>
   )
 }

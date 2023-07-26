@@ -1,11 +1,11 @@
 import React from 'react'
-import {PageNav} from '../../components'
+import * as Components from '../../components'
 
 const Uranus = () => {
   return (
     <>
-        <h1> Uranus </h1>
-        <PageNav pageNav='page-nav uranus'/>
+        <Components.PageMainTitle pageMainTitle='Uranus' />
+        <Components.PageNav pageNav='page-nav uranus'/>
     </>
   )
 }

@@ -17,6 +17,27 @@
 .page-nav.mercury a:hover{
     border-bottom: 4px solid #419EBB;
 }
+.page-nav.venus a:hover{
+    border-bottom: 4px solid #EDA249;
+}
+.page-nav.earth a:hover{
+    border-bottom: 4px solid #6D2ED5;
+}
+.page-nav.mars a:hover{
+    border-bottom: 4px solid #D14C32;
+}
+.page-nav.jupiter a:hover{
+    border-bottom: 4px solid #D83A34;
+}
+.page-nav.saturn a:hover{
+    border-bottom: 4px solid #CD5120;
+}
+.page-nav.uranus a:hover{
+    border-bottom: 4px solid #1EC1A2;
+}
+.page-nav.neptune a:hover{
+    border-bottom: 4px solid #2D68F0;
+}
 
 @media only screen and (max-width: 760px) {
 
