@@ -7,8 +7,8 @@ const Mercury = (props) => {
   return (
     <>
         <Components.PageNav pageNav='page-nav mercury'/>
+        <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
         <Components.PageMainTitle pageMainTitle='Mercury' />
-        <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Image of Mercury'/>
     </>
   )
 }

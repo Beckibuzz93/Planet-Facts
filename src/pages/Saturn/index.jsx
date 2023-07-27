@@ -7,8 +7,8 @@ const Saturn = () => {
   return (
     <>
         <Components.PageNav pageNav='page-nav saturn'/>
+        <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Saturn illustration'/>
         <Components.PageMainTitle pageMainTitle='Saturn' />
-        <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Image of Saturn'/>
     </>
   )
 }

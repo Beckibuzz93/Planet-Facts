@@ -6,8 +6,8 @@ const Jupiter = () => {
   return (
     <>
         <Components.PageNav pageNav='page-nav jupiter'/>
+        <Components.PageMainImage pageMainImage='page-main-image jupiter-img' mainImg={PlanetJupiter} altImg='Jupiter illustration'/>
         <Components.PageMainTitle pageMainTitle='Jupiter' />
-        <Components.PageMainImage pageMainImage='page-main-image jupiter-img' mainImg={PlanetJupiter} altImg='Image of Jupiter'/>
 
     </>
   )

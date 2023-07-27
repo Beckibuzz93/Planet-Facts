@@ -6,8 +6,8 @@ const Earth = () => {
   return (
     <>
         <Components.PageNav pageNav='page-nav earth'/>
+        <Components.PageMainImage pageMainImage='page-main-image earth-img' mainImg={PlanetEarth} altImg='Earth illustration'/>
         <Components.PageMainTitle pageMainTitle='Earth' />
-        <Components.PageMainImage pageMainImage='page-main-image earth-img' mainImg={PlanetEarth} altImg='Image of Earth'/>
     </>
   )
 }
