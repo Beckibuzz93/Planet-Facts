@@ -1,7 +1,9 @@
 .page-nav {
     display: none;
 }
-
+.page-button-container {
+    display: none;
+}
 
 @media only screen and (max-width: 760px) {
     .page-nav {
@@ -11,6 +13,7 @@
         justify-content: space-around;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
     }
     .page-nav a {
         font-family: 'League_Spartan';
@@ -50,8 +53,18 @@
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
-
+    .page-button-container {
+        display: flex;
+    }
+    .page-nav {
+        display: none;
+    }
 }
 @media only screen and (min-width: 1300px) {
-
+    .page-button-container {
+        display: flex;
+    }
+    .page-nav {
+        display: none;
+    }
 }
