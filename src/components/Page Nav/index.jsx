@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Routes, Route, NavLink } from 'react-router-dom'
+
+import * as Pages from '../../pages'
 
 import './index.css'
 
@@ -10,9 +12,9 @@ const PageNav = (props) => {
     return(
         <>
             <div className={props.pageNav}>
-                <Link  to={props.overviewLink}>Overview</Link>
-                <Link  to={props.structureLink}>Structure</Link>
-                <Link  to={props.surfaceLink}>Surface</Link>
+                <NavLink to='/Mercury'> Overview </NavLink>
+                <NavLink to="/MercuryStructure"> Structure </NavLink>
+                <NavLink to="/MercurySurface"> Surface </NavLink>
             </div>
         </>
     )

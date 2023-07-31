@@ -2,10 +2,10 @@ import React from 'react'
 import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
 
-import PlanetMercury from '../../assets/planet-mercury.svg';
+import PlanetMercury from '../../assets/planet-mercury-internal.svg';
 
-const Mercury = (props) => {
-  const sentence = `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.`
+const MercuryStructure = (props) => {
+  const sentence = `Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.`
   return (
     <>
         <Components.PageNav pageNav='page-nav mercury'/>
@@ -24,4 +24,4 @@ const Mercury = (props) => {
   )
 }
 
-export default Mercury
+export default MercuryStructure

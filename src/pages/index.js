@@ -8,3 +8,8 @@ export { default as Saturn } from './Saturn';
 export { default as Uranus } from './Uranus';
 export { default as Neptune } from './Neptune';
 export { default as PageNotFound } from './Page Not Found';
+
+
+
+export { default as MercuryStructure } from './Mercury/structure';
+export { default as MercurySurface } from './Mercury/surface';
