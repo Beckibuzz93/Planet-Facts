@@ -5,10 +5,10 @@ import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
-import PlanetJupiter from '../../assets/planet-jupiter.svg';
+import PlanetJupiter from '../../assets/planet-jupiter-internal.svg';
 
-const Jupiter = () => {
-  let sentence = `Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.`
+const JupiterStructure = () => {
+  let sentence = `When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core.`
   return (
     <>
         <PageNavs.JupiterNav pageNav='page-nav jupiter'/>
@@ -25,4 +25,4 @@ const Jupiter = () => {
   )
 }
 
-export default Jupiter
+export default JupiterStructure

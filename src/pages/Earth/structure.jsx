@@ -5,10 +5,10 @@ import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
-import PlanetEarth from '../../assets/planet-earth.svg';
+import PlanetEarth from '../../assets/planet-earth-internal.svg';
 
-const Earth = () => {
-  const sentence = `Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.`
+const EarthStructure = () => {
+  const sentence = `Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.`
   return (
     <>
         <PageNavs.EarthNav pageNav='page-nav earth'/>
@@ -26,4 +26,4 @@ const Earth = () => {
   )
 }
 
-export default Earth
+export default EarthStructure

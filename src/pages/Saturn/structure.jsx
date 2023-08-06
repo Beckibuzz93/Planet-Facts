@@ -5,10 +5,10 @@ import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
-import PlanetSaturn from '../../assets/planet-saturn.svg'
+import PlanetSaturn from '../../assets/planet-saturn-internal.svg'
 
-const Saturn = () => {
-  let sentence = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
+const SaturnStructure = () => {
+  let sentence = `Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.`
   return (
     <>
         <PageNavs.SaturnNav pageNav='page-nav saturn'/>
@@ -25,4 +25,4 @@ const Saturn = () => {
   )
 }
 
-export default Saturn
+export default SaturnStructure

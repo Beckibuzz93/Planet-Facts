@@ -5,10 +5,10 @@ import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
-import PlanetMars from '../../assets/planet-mars.svg'
+import PlanetMars from '../../assets/planet-mars-internal.svg'
 
-const Mars = () => {
-  let sentence = `Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".`
+const MarsStructure = () => {
+  let sentence = `Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.`
   return (
     <>
         <PageNavs.MarsNav pageNav='page-nav mars'/>
@@ -26,4 +26,4 @@ const Mars = () => {
   )
 }
 
-export default Mars
+export default MarsStructure

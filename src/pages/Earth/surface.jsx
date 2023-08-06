@@ -6,13 +6,15 @@ import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
 import PlanetEarth from '../../assets/planet-earth.svg';
+import EarthSurfaceImg from '../../assets/geology-earth.png';
 
-const Earth = () => {
-  const sentence = `Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.`
+const EarthSurface = () => {
+  const sentence = `The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.`
   return (
     <>
         <PageNavs.EarthNav pageNav='page-nav earth'/>
         <Components.PageMainImage pageMainImage='page-main-image earth-img' mainImg={PlanetEarth} altImg='Earth illustration'/>
+        <Components.GeologyImage geologyImageClass='geo-img' geologyImg={EarthSurfaceImg} altGeoImg='Mercury geology illustration'/>
         <Components.PageMainTitle pageMainTitle='Earth' />
 
         <Components.PageMainStatement pageMainStatement={sentence}/>
@@ -26,4 +28,4 @@ const Earth = () => {
   )
 }
 
-export default Earth
+export default EarthSurface

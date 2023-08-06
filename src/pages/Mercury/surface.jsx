@@ -1,6 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import * as Components from '../../components'
 import * as Buttons from '../../components/Buttons'
+import * as PageNavs from '../../components/PageNavs'
 
 import PlanetMercury from '../../assets/planet-mercury.svg';
 
@@ -10,7 +13,7 @@ const MercurySurface = (props) => {
   const sentence = `Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.`
   return (
     <>
-        <Components.PageNav pageNav='page-nav mercury'/>
+        <PageNavs.MercuryNav pageNav='page-nav mercury'/>
         <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={MercurySurfaceImg} altGeoImg='Mercury geology illustration'/>
         
@@ -19,9 +22,9 @@ const MercurySurface = (props) => {
         <Components.PageMainStatement pageMainStatement={sentence}/>
 
         <div className='page-button-container'>
-          <Buttons.MercuryBtn num='01' buttonName='Overview' />
-          <Buttons.MercuryBtn num='02' buttonName='Structure' />
-          <Buttons.MercuryBtn num='03' buttonName='Surface' />
+          <NavLink to="/Mercury"><Buttons.MercuryBtn num='01' buttonName='Overview' /></NavLink>
+          <NavLink to="/MercuryStructure"><Buttons.MercuryBtn num='02' buttonName='Structure' /></NavLink>
+          <NavLink to="/MercurySurface"><Buttons.MercuryBtn num='03' buttonName='Surface' /></NavLink>
         </div>
 
     </>

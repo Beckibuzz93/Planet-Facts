@@ -7,13 +7,16 @@ import * as PageNavs from '../../components/PageNavs'
 
 import PlanetUranus from '../../assets/planet-uranus.svg'
 
-const Uranus = () => {
-  let sentence = `Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.`
+import UranusSurfaceImg from '../../assets/geology-uranus.png';
+
+const Saturn = () => {
+  let sentence = `The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.`
   return (
     <>
         <PageNavs.UranusNav pageNav='page-nav uranus'/>
         <Components.PageMainImage pageMainImage='page-main-image uranus-img' mainImg={PlanetUranus} altImg='Uranus illustration'/>
-        
+        <Components.GeologyImage geologyImageClass='geo-img' geologyImg={UranusSurfaceImg} altGeoImg='Uranus geology illustration'/>
+
         <Components.PageMainTitle pageMainTitle='Uranus' />
         <Components.PageMainStatement pageMainStatement={sentence}/>
 
@@ -26,4 +29,4 @@ const Uranus = () => {
   )
 }
 
-export default Uranus
+export default Saturn

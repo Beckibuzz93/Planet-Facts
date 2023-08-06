@@ -7,12 +7,16 @@ import * as PageNavs from '../../components/PageNavs'
 
 import PlanetSaturn from '../../assets/planet-saturn.svg'
 
-const Saturn = () => {
-  let sentence = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
+import SaturnSurfaceImg from '../../assets/geology-saturn.png';
+
+const SaturnSurface= () => {
+  let sentence = `The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. `
   return (
     <>
         <PageNavs.SaturnNav pageNav='page-nav saturn'/>
         <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Saturn illustration'/>
+        <Components.GeologyImage geologyImageClass='geo-img' geologyImg={SaturnSurfaceImg} altGeoImg='Mercury geology illustration'/>
+
         <Components.PageMainTitle pageMainTitle='Saturn' />
         <Components.PageMainStatement pageMainStatement={sentence}/>
 
@@ -25,4 +29,4 @@ const Saturn = () => {
   )
 }
 
-export default Saturn
+export default SaturnSurface
