@@ -14,7 +14,7 @@ const Neptune = () => {
         <PageNavs.NeptuneNav pageNav='page-nav neptune'/>
         <Components.PageMainImage pageMainImage='page-main-image neptune-img' mainImg={PlanetNeptune} altImg='Neptune illustration'/>
         <Components.PageMainTitle pageMainTitle='Neptune' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Neptune'/>
 
         <div className='page-button-container'>
           <NavLink to="/Neptune"><Buttons.NeptuneBtn num='01' buttonName='Overview' /></NavLink>

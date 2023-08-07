@@ -14,7 +14,7 @@ const SaturnStructure = () => {
         <PageNavs.SaturnNav pageNav='page-nav saturn'/>
         <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Saturn illustration'/>
         <Components.PageMainTitle pageMainTitle='Saturn' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
         <div className='page-button-container'>
           <NavLink to="/Saturn"><Buttons.SaturnBtn num='01' buttonName='Overview' /></NavLink>

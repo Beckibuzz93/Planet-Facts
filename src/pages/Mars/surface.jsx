@@ -16,7 +16,7 @@ const MarsSurface = () => {
         <PageNavs.MarsNav pageNav='page-nav mars'/>
         <Components.PageMainImage pageMainImage='page-main-image mars-img' mainImg={PlanetMars} altImg='Mars illustration'/>
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={MarsSurfaceImg} altGeoImg='Mars geology illustration'/>
-        <Components.PageMainTitle pageMainTitle='Mars' />
+        <Components.PageMainTitle pageMainTitle='Mars' wikiLink='https://en.wikipedia.org/wiki/Mars'/>
 
         <Components.PageMainStatement pageMainStatement={sentence}/>
 

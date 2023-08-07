@@ -18,7 +18,7 @@ const SaturnSurface= () => {
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={SaturnSurfaceImg} altGeoImg='Mercury geology illustration'/>
 
         <Components.PageMainTitle pageMainTitle='Saturn' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
         <div className='page-button-container'>
           <NavLink to="/Saturn"><Buttons.SaturnBtn num='01' buttonName='Overview' /></NavLink>

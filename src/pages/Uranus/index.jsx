@@ -15,7 +15,7 @@ const Uranus = () => {
         <Components.PageMainImage pageMainImage='page-main-image uranus-img' mainImg={PlanetUranus} altImg='Uranus illustration'/>
         
         <Components.PageMainTitle pageMainTitle='Uranus' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Uranus'/>
 
         <div className='page-button-container'>
           <NavLink to="/Uranus"><Buttons.UranusBtn num='01' buttonName='Overview' /></NavLink>

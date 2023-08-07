@@ -16,7 +16,7 @@ const VenusStructure = () => {
 
         <Components.PageMainTitle pageMainTitle='Venus' />
 
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Venus'/>
 
         <div className='page-button-container'>
           <NavLink to="/Venus"><Buttons.VenusBtn num='01' buttonName='Overview' /></NavLink>

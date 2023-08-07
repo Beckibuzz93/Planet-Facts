@@ -14,7 +14,7 @@ const Jupiter = () => {
         <PageNavs.JupiterNav pageNav='page-nav jupiter'/>
         <Components.PageMainImage pageMainImage='page-main-image jupiter-img' mainImg={PlanetJupiter} altImg='Jupiter illustration'/>
         <Components.PageMainTitle pageMainTitle='Jupiter' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Jupiter'/>
 
         <div className='page-button-container'>
           <NavLink to="/Jupiter"><Buttons.JupiterBtn num='01' buttonName='Overview' /></NavLink>

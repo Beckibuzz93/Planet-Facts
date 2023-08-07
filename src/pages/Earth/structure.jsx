@@ -13,7 +13,7 @@ const EarthStructure = () => {
     <>
         <PageNavs.EarthNav pageNav='page-nav earth'/>
         <Components.PageMainImage pageMainImage='page-main-image earth-img' mainImg={PlanetEarth} altImg='Earth illustration'/>
-        <Components.PageMainTitle pageMainTitle='Earth' />
+        <Components.PageMainTitle pageMainTitle='Earth' wikiLink='https://en.wikipedia.org/wiki/Earth'/>
 
         <Components.PageMainStatement pageMainStatement={sentence}/>
 

@@ -15,7 +15,7 @@ const MercuryStructure = (props) => {
         <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
         <Components.PageMainTitle pageMainTitle='Mercury' />
 
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
 
         <div className='page-button-container'>
           <NavLink to="/Mercury"><Buttons.MercuryBtn num='01' buttonName='Overview' /></NavLink>

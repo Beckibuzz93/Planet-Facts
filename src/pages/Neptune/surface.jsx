@@ -18,7 +18,7 @@ const Neptune = () => {
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={NeptuneSurfaceImg} altGeoImg='Mercury geology illustration'/>
 
         <Components.PageMainTitle pageMainTitle='Neptune' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Neptune'/>
 
         <div className='page-button-container'>
           <NavLink to="/Neptune"><Buttons.NeptuneBtn num='01' buttonName='Overview' /></NavLink>

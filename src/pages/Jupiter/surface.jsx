@@ -17,7 +17,7 @@ const JupiterSurface = () => {
         <Components.PageMainImage pageMainImage='page-main-image jupiter-img' mainImg={PlanetJupiter} altImg='Jupiter illustration'/>
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={JupiterSurfaceImg} altGeoImg='Jupiter geology illustration'/>
         <Components.PageMainTitle pageMainTitle='Jupiter' />
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Jupiter'/>
 
         <div className='page-button-container'>
           <NavLink to="/Jupiter"><Buttons.JupiterBtn num='01' buttonName='Overview' /></NavLink>
