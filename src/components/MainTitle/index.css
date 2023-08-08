@@ -1,41 +1,33 @@
 @import url(../../css//colours.css); 
 
+.title-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media only screen and (max-width: 760px) {
-    h1 {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Antonio', Medium;
-        line-height: 7.35rem;
-        text-transform: uppercase;
+
+    .planets-icon {
+        margin-top: 2rem;
+        width: 10rem;
+        height: 10rem;
     }
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
-    h1 {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        width: 100%;
-        text-align: center;
-        font-size: 4rem;
-        font-family: 'Antonio', Medium;
-        line-height: 7.35rem;
-        text-transform: uppercase;
+    .planets-icon {
+        margin-top: 2rem;
+        width: 16rem;
+        height: 16rem;
     }
 
 }
 @media only screen and (min-width: 1300px) {
-    h1 {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        width: 100%;
-        text-align: center;
-        font-family: 'Antonio', Medium;
-        font-size: 5.7rem;
-        line-height: 7.35rem;
-        text-transform: uppercase;
+    .planets-icon {
+        margin-top: 2rem;
+        width: 24rem;
+        height: 24rem;
     }
+
 }

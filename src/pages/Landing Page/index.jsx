@@ -10,7 +10,7 @@ import './style.css'
 const LandingPage = () => {
   return (
     <>
-        <MainTitle mainTitle='The Planets' />
+        <MainTitle/>
         <MainStatement mainStatement='A place to learn about our planets in the solar system. Choose which planet to learn about first below.' />
         <div className='landing-btn-container'>
           <Link to="/Mercury"><Buttons.MercuryBtn num='01' buttonName='Mercury'/></Link>
