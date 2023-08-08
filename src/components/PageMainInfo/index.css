@@ -10,9 +10,6 @@
     text-transform: uppercase;
     border: 1px solid rgba(151, 151, 151, 0.2);
     padding: 1rem 1rem;
-    text-align: start;
-    font-weight: 600;
-    letter-spacing: 2px;
     margin: auto;
     display: flex;
     justify-content: space-between;

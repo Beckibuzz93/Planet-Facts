@@ -25,6 +25,8 @@ const MarsSurface = () => {
           <NavLink to="/MarsStructure"><Buttons.MarsBtn num='02' buttonName='Structure' /></NavLink>
           <NavLink to="/MarsSurface"><Buttons.MarsBtn num='03' buttonName='Surface' /></NavLink>
         </div>
+
+        <Components.PageMainInfo rotationTime='1.03 days' revolutionTime='1.88 years' radius='3,389 km' avgTemp='-28°C'/>
     </>
   )
 }

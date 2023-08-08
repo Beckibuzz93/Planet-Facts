@@ -23,7 +23,7 @@ const Mercury = (props) => {
           <NavLink to="/MercurySurface"><Buttons.MercuryBtn num='03' buttonName='Surface' /></NavLink>
         </div>
 
-        <Components.PageMainInfo/>
+        <Components.PageMainInfo rotationTime='58.6 days' revolutionTime='87.97 days' radius='2,439.7 km' avgTemp='430°C'/>
 
     </>
   )
