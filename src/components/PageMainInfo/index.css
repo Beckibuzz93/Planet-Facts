@@ -1,0 +1,39 @@
+@import url(../../css//colours.css); 
+
+.main-page-info-container {
+    margin-top: 3rem;
+}
+.main-page-info {
+    width: 80%;
+    background: transparent;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 1rem 1rem;
+    text-align: start;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.main-page-info h4{
+    letter-spacing: 1px;
+    color: #838391;
+}
+.main-page-info h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media only screen and (max-width: 760px) {
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+
+
+}
+@media only screen and (min-width: 1300px) {
+
+}

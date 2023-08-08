@@ -23,6 +23,8 @@ const Mercury = (props) => {
           <NavLink to="/MercurySurface"><Buttons.MercuryBtn num='03' buttonName='Surface' /></NavLink>
         </div>
 
+        <Components.PageMainInfo/>
+
     </>
   )
 }
