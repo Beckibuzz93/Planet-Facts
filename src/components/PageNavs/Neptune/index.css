@@ -1,4 +1,4 @@
 @import url(../../../css//pageNav.css);
-.neptune-btn:hover {
-    background-color: #2D68F0;
+.neptune a:hover {
+    border-bottom: 3px solid #2D68F0;
 }

@@ -1,5 +1,5 @@
 @import url(../../../css//pageNav.css);
-.uranus-btn:hover {
-    background-color: #1ec2a4;
+.uranus a:hover {
+    border-bottom: 3px solid #1ec2a4;
 }
 

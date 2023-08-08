@@ -4,16 +4,19 @@ import { NavLink } from 'react-router-dom'
 
 import './index.css'
 
-//const styles = ({ isActive }) => ({ color: isActive ? '#DAF7A6' : '#CD5C5C' });
+const styles = ({ isActive }) => ({ 
+    borderBottom: isActive ? '3px solid #2D68F0' : '',
+    color: isActive ? '#FFF' : '#838391'
+ });
 
 const EarthNav = (props) => {
 
     return(
         <>
             <div className={props.pageNav}>
-                <NavLink to="/Earth"> Overview </NavLink>
-                <NavLink to="/EarthStructure"> Structure </NavLink>
-                <NavLink to="/EarthSurface"> Surface </NavLink>
+                <NavLink style={styles} to="/Earth"> Overview </NavLink>
+                <NavLink style={styles} to="/EarthStructure"> Structure </NavLink>
+                <NavLink style={styles} to="/EarthSurface"> Surface </NavLink>
             </div>
         </>
     )

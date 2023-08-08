@@ -1,4 +1,4 @@
 @import url(../../../css//pageNav.css);
-.mars-btn:hover {
-    background-color: #D14C32;
+.mars a:hover {
+    border-bottom: 3px solid #D14C32;
 }

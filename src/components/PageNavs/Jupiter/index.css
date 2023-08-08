@@ -1,5 +1,5 @@
 @import url(../../../css//pageNav.css);
-.jupiter-btn:hover {
-    background-color: #D83A34;
-}
 
+.jupiter a:hover {
+    border-bottom: 3px solid #D83A34;
+}
