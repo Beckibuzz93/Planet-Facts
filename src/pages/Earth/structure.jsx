@@ -13,9 +13,9 @@ const EarthStructure = () => {
     <>
         <PageNavs.EarthNav pageNav='page-nav earth'/>
         <Components.PageMainImage pageMainImage='page-main-image earth-img' mainImg={PlanetEarth} altImg='Earth illustration'/>
-        <Components.PageMainTitle pageMainTitle='Earth' wikiLink='https://en.wikipedia.org/wiki/Earth'/>
+        <Components.PageMainTitle pageMainTitle='Earth'/>
 
-        <Components.PageMainStatement pageMainStatement={sentence}/>
+        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Earth'/>
 
         <div className='page-button-container'>
           <NavLink to='/Earth'><Buttons.EarthBtn num='01' buttonName='Overview' /></NavLink>
