@@ -31,6 +31,7 @@
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
     .page-button-container {
         display: flex;
+
     }
     .page-nav {
         display: none;

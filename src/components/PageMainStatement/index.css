@@ -1,4 +1,4 @@
-@import url(../../css//colours.css); 
+@import url(../../css/colours.css); 
 
 @media only screen and (max-width: 760px) {
     .page-main-statement-container {
@@ -44,7 +44,10 @@
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
-
+    .page-main-statement-container {
+        bordeR: 1px solid red;
+    }
+    
 
 }
 @media only screen and (min-width: 1300px) {
