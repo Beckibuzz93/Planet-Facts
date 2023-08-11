@@ -27,6 +27,39 @@ nav a {
     text-decoration: none;
     line-height: 1.78rem;
     letter-spacing: 1px;
+    border-top: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #fff !important;
+}
+
+nav .home-link:hover {
+    border-top: 3px solid #fff !important;
+}
+nav .mercury-link:hover {
+    border-top: 3px solid #419EBB !important;
+}
+nav .venus-link:hover {
+    border-top: 3px solid #EDA249 !important;
+}
+nav .earth-link:hover {
+    border-top: 3px solid #2D68F0 !important;
+}
+nav .mars-link:hover {
+    border-top: 3px solid #CD5120 !important;
+}
+nav .jupiter-link:hover {
+    border-top: 3px solid #D14C32 !important;
+}
+nav .saturn-link:hover {
+    border-top: 3px solid #EDA249!important;
+}
+nav .uranus-link:hover {
+    border-top: 3px solid #1ec2a4 !important;
+}
+nav .neptune-link:hover {
+    border-top: 3px solid #2D68F0 !important;
 }
 
 .burger-nav {
