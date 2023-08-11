@@ -10,6 +10,9 @@ import PlanetSaturn from '../../assets/planet-saturn.svg'
 import SaturnSurfaceImg from '../../assets/geology-saturn.png';
 
 const SaturnSurface= () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#EDA249' : '',
+  });
   let sentence = `The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. `
   return (
     <>
@@ -22,9 +25,9 @@ const SaturnSurface= () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Saturn"><Buttons.SaturnBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/SaturnStructure"><Buttons.SaturnBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/SaturnSurface"><Buttons.SaturnBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Saturn"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

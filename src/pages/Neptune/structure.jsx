@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetNeptune from '../../assets/planet-neptune-internal.svg'
 
 const Neptune = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#2D68F0' : '',
+  });
   let sentence = `Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.`
   return (
     <>
@@ -19,9 +22,9 @@ const Neptune = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Neptune'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Neptune"><Buttons.NeptuneBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/NeptuneStructure"><Buttons.NeptuneBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/NeptuneSurface"><Buttons.NeptuneBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Neptune"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/NeptuneStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/NeptuneSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

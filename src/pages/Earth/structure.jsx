@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetEarth from '../../assets/planet-earth-internal.svg';
 
 const EarthStructure = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#2D68F0' : '',
+  });
   const sentence = `Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.`
   return (
     <>
@@ -19,9 +22,9 @@ const EarthStructure = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Earth'/>
 
           <div className='page-button-container'>
-            <NavLink to='/Earth'><Buttons.EarthBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to='/EarthStructure'><Buttons.EarthBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to='/EarthSurface'><Buttons.EarthBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/Earth'><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/EarthStructure'><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/EarthSurface'><span>03</span>Surface</NavLink>
           </div>
         </div>
 

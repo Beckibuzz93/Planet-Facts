@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetSaturn from '../../assets/planet-saturn-internal.svg'
 
 const SaturnStructure = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#EDA249' : '',
+  });
   let sentence = `Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3, which is reached at a radius containing 99.9% of Saturn's mass.`
   return (
     <>
@@ -19,9 +22,9 @@ const SaturnStructure = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Saturn"><Buttons.SaturnBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/SaturnStructure"><Buttons.SaturnBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/SaturnSurface"><Buttons.SaturnBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Saturn"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
         <Components.PageMainInfo rotationTime='10.8 hours' revolutionTime='29.46 years' radius='58,232 km' avgTemp='-138°C'/>

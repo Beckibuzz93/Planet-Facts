@@ -10,6 +10,9 @@ import PlanetMercury from '../../assets/planet-mercury.svg';
 import MercurySurfaceImg from '../../assets/geology-mercury.png';
 
 const MercurySurface = (props) => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#419EBB' : '',
+  });
   const sentence = `Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.`
   return (
     <>
@@ -23,9 +26,9 @@ const MercurySurface = (props) => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Mercury"><Buttons.MercuryBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/MercuryStructure"><Buttons.MercuryBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/MercurySurface"><Buttons.MercuryBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Mercury"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/MercuryStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/MercurySurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

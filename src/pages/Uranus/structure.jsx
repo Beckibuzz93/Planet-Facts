@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetUranus from '../../assets/planet-uranus-internal.svg'
 
 const Saturn = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#1ec2a4' : '',
+  });
   let sentence = `The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses.`
   return (
     <>
@@ -19,9 +22,9 @@ const Saturn = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Uranus'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Uranus"><Buttons.UranusBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/UranusStructure"><Buttons.UranusBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/UranusSurface"><Buttons.UranusBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Uranus"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/UranusStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/UranusSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetUranus from '../../assets/planet-uranus.svg'
 
 const Uranus = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#1ec2a4' : '',
+  });
   let sentence = `Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.`
   return (
     <>
@@ -19,9 +22,9 @@ const Uranus = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Uranus'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Uranus"><Buttons.UranusBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/UranusStructure"><Buttons.UranusBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/UranusSurface"><Buttons.UranusBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Uranus"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/UranusStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/UranusSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

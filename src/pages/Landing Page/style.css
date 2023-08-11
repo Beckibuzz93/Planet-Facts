@@ -8,6 +8,28 @@
     margin: 0.6rem;
 }
 
+.main-btn {
+    width: 80%;
+    background: transparent;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 1rem 1rem;
+    cursor: pointer;
+    text-align: start;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .main-btn span {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+    margin-right: 1rem;
+  }
+  .main-btn:hover {
+    color: rgb(18, 18, 19);
+  }
+
 @media only screen and (max-width: 760px) {
     .landing-btn-container {
         display: flex;

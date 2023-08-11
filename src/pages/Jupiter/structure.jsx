@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetJupiter from '../../assets/planet-jupiter-internal.svg';
 
 const JupiterStructure = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#D14C32' : '',
+  });
   let sentence = `When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core.`
   return (
     <>
@@ -19,9 +22,9 @@ const JupiterStructure = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Jupiter'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Jupiter"><Buttons.JupiterBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/JupiterStructure"><Buttons.JupiterBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/JupiterSurface"><Buttons.JupiterBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Jupiter"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/JupiterStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/JupiterSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

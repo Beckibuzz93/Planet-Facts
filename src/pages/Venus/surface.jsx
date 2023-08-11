@@ -10,6 +10,9 @@ import PlanetVenus from '../../assets/planet-venus.svg'
 import VenusSurfaceImg from '../../assets/geology-venus.png';
 
 const VenusSurface = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#EDA249' : '',
+  });
   const sentence = `Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.`
   return (
     <>
@@ -22,9 +25,9 @@ const VenusSurface = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Venus'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Venus"><Buttons.VenusBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/VenusStructure"><Buttons.VenusBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/VenusSurface"><Buttons.VenusBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Venus"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/VenusStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/VenusSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

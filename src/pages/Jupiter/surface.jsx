@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import * as Components from '../../components'
-import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
 import PlanetJupiter from '../../assets/planet-jupiter.svg';
@@ -10,6 +9,9 @@ import PlanetJupiter from '../../assets/planet-jupiter.svg';
 import JupiterSurfaceImg from '../../assets/geology-jupiter.png';
 
 const JupiterSurface = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#D14C32' : '',
+  });
   let sentence = `The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.`
   return (
     <>
@@ -22,9 +24,9 @@ const JupiterSurface = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Jupiter'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Jupiter"><Buttons.JupiterBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/JupiterStructure"><Buttons.JupiterBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/JupiterSurface"><Buttons.JupiterBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Jupiter"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/JupiterStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/JupiterSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

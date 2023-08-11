@@ -2,12 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import * as Components from '../../components'
-import * as Buttons from '../../components/Buttons'
 import * as PageNavs from '../../components/PageNavs'
 
 import PlanetEarth from '../../assets/planet-earth.svg';
 
 const Earth = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#2D68F0' : '',
+  });
   const sentence = `Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.`
   return (
     <>
@@ -19,9 +21,9 @@ const Earth = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Earth'/>
 
           <div className='page-button-container'>
-            <NavLink to='/Earth'><Buttons.EarthBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to='/EarthStructure'><Buttons.EarthBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to='/EarthSurface'><Buttons.EarthBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/Earth'><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/EarthStructure'><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to='/EarthSurface'><span>03</span>Surface</NavLink>
           </div>
         </div>
 

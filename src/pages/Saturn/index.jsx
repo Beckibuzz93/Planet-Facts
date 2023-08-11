@@ -8,6 +8,9 @@ import * as PageNavs from '../../components/PageNavs'
 import PlanetSaturn from '../../assets/planet-saturn.svg'
 
 const Saturn = () => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#EDA249' : '',
+  });
   let sentence = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
   return (
     <>
@@ -19,9 +22,9 @@ const Saturn = () => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Saturn"><Buttons.SaturnBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/SaturnStructure"><Buttons.SaturnBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/SaturnSurface"><Buttons.SaturnBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Saturn"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/SaturnSurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 

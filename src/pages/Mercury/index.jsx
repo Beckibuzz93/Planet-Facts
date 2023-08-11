@@ -10,6 +10,9 @@ import PlanetMercury from '../../assets/planet-mercury.svg';
 import './style.css'
 
 const Mercury = (props) => {
+  const styles = ({ isActive }) => ({ 
+    backgroundColor: isActive ? '#419EBB' : '',
+  });
   const sentence = `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.`
   return (
     <>
@@ -21,9 +24,9 @@ const Mercury = (props) => {
           <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
 
           <div className='page-button-container'>
-            <NavLink to="/Mercury"><Buttons.MercuryBtn num='01' buttonName='Overview' /></NavLink>
-            <NavLink to="/MercuryStructure"><Buttons.MercuryBtn num='02' buttonName='Structure' /></NavLink>
-            <NavLink to="/MercurySurface"><Buttons.MercuryBtn num='03' buttonName='Surface' /></NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/Mercury"><span>01</span>Overview</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/MercuryStructure"><span>02</span>Structure</NavLink>
+            <NavLink className='page-main-btn' style={styles} to="/MercurySurface"><span>03</span>Surface</NavLink>
           </div>
         </div>
 
