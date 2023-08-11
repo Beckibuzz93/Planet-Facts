@@ -28,6 +28,7 @@ nav a {
     line-height: 1.78rem;
     letter-spacing: 1px;
     border-top: 3px solid transparent;
+    padding-top: 0.5rem;
 }
 
 nav a:hover {
@@ -189,6 +190,7 @@ nav .neptune-link:hover {
     nav a {
         font-size: 1.2rem;
     }
+
 }
 @media only screen and (min-width: 1300px) {
     header {
@@ -217,5 +219,6 @@ nav .neptune-link:hover {
         text-decoration: none;
         line-height: 1.78rem;
         letter-spacing: 1px;
+        padding-top: 1rem;
     }
 }
