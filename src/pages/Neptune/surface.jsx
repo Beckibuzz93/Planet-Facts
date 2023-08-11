@@ -16,14 +16,16 @@ const Neptune = () => {
         <PageNavs.NeptuneNav pageNav='page-nav neptune'/>
         <Components.PageMainImage pageMainImage='page-main-image neptune-img' mainImg={PlanetNeptune} altImg='Neptune illustration'/>
         <Components.GeologyImage geologyImageClass='geo-img' geologyImg={NeptuneSurfaceImg} altGeoImg='Mercury geology illustration'/>
-
         <Components.PageMainTitle pageMainTitle='Neptune' />
-        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Neptune'/>
 
-        <div className='page-button-container'>
-          <NavLink to="/Neptune"><Buttons.NeptuneBtn num='01' buttonName='Overview' /></NavLink>
-          <NavLink to="/NeptuneStructure"><Buttons.NeptuneBtn num='02' buttonName='Structure' /></NavLink>
-          <NavLink to="/NeptuneSurface"><Buttons.NeptuneBtn num='03' buttonName='Surface' /></NavLink>
+        <div className='statement-and-button-container'>
+          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Neptune'/>
+
+          <div className='page-button-container'>
+            <NavLink to="/Neptune"><Buttons.NeptuneBtn num='01' buttonName='Overview' /></NavLink>
+            <NavLink to="/NeptuneStructure"><Buttons.NeptuneBtn num='02' buttonName='Structure' /></NavLink>
+            <NavLink to="/NeptuneSurface"><Buttons.NeptuneBtn num='03' buttonName='Surface' /></NavLink>
+          </div>
         </div>
 
         <Components.PageMainInfo rotationTime='16.08 hours' revolutionTime='164.79 years' radius='24.622 km' avgTemp='-201°C'/>

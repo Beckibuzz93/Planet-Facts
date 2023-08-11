@@ -15,12 +15,14 @@ const MarsStructure = () => {
         <Components.PageMainImage pageMainImage='page-main-image mars-img' mainImg={PlanetMars} altImg='Mars illustration'/>
         <Components.PageMainTitle pageMainTitle='Mars'/>
 
-        <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mars'/>
+        <div className='statement-and-button-container'>
+          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mars'/>
 
-        <div className='page-button-container'>
-          <NavLink to="/Mars"><Buttons.MarsBtn num='01' buttonName='Overview' /></NavLink>
-          <NavLink to="/MarsStructure"><Buttons.MarsBtn num='02' buttonName='Structure' /></NavLink>
-          <NavLink to="/MarsSurface"><Buttons.MarsBtn num='03' buttonName='Surface' /></NavLink>
+          <div className='page-button-container'>
+            <NavLink to="/Mars"><Buttons.MarsBtn num='01' buttonName='Overview' /></NavLink>
+            <NavLink to="/MarsStructure"><Buttons.MarsBtn num='02' buttonName='Structure' /></NavLink>
+            <NavLink to="/MarsSurface"><Buttons.MarsBtn num='03' buttonName='Surface' /></NavLink>
+          </div>
         </div>
 
         <Components.PageMainInfo rotationTime='1.03 days' revolutionTime='1.88 years' radius='3,389 km' avgTemp='-28°C'/>
