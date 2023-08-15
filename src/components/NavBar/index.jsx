@@ -28,7 +28,7 @@ const NavBar = (props) => {
         borderTop: isActive ? '3px solid #EDA249' : '',
         color: isActive ? '#FFF' : '#929292' });
     const earthStyles = ({ isActive }) => ({ 
-        borderTop: isActive ? '3px solid #2D68F0' : '',
+        borderTop: isActive ? '3px solid #6D2ED5' : '',
         color: isActive ? '#FFF' : '#929292' });    
     const marsStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #CD5120' : '',
@@ -37,7 +37,7 @@ const NavBar = (props) => {
         borderTop: isActive ? '3px solid #D14C32' : '',
         color: isActive ? '#FFF' : '#929292' });          
     const saturnStyles = ({ isActive }) => ({ 
-        borderTop: isActive ? '3px solid #EDA249' : '',
+        borderTop: isActive ? '3px solid #CD5120' : '',
         color: isActive ? '#FFF' : '#929292' });    
     const uranusStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #1ec2a4' : '',

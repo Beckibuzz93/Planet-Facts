@@ -9,7 +9,7 @@ import PlanetEarth from '../../assets/planet-earth-internal.svg';
 
 const EarthStructure = () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#2D68F0' : '',
+    backgroundColor: isActive ? '#6D2ED5' : '',
   });
   const sentence = `Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.`
   return (

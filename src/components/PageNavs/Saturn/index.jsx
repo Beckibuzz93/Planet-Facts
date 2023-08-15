@@ -6,7 +6,7 @@ import './index.css'
 
 const styles = ({ isActive }) => ({
     borderBottom: isActive ? '3px solid #EDA249' : '', 
-    color: isActive ? '#FFF' : '#838391'
+    color: isActive ? '#FFF' : '#CD5120'
 });
 
 const SaturnNav = (props) => {

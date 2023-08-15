@@ -9,7 +9,7 @@ import PlanetMars from '../../assets/planet-mars.svg'
 
 const Mars = () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#CD5120' : '',
+    backgroundColor: isActive ? '#D14C32' : '',
   });
   let sentence = `Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".`
   return (

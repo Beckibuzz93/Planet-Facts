@@ -11,7 +11,7 @@ import MarsSurfaceImg from '../../assets/geology-mars.png';
 
 const MarsSurface = () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#CD5120' : '',
+    backgroundColor: isActive ? '#D14C32' : '',
   });
   let sentence = `Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.`
   return (

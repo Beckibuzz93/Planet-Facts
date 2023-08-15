@@ -9,7 +9,7 @@ import PlanetSaturn from '../../assets/planet-saturn.svg'
 
 const Saturn = () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#EDA249' : '',
+    backgroundColor: isActive ? '#CD5120' : '',
   });
   let sentence = `Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.`
   return (

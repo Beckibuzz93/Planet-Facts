@@ -11,7 +11,7 @@ import SaturnSurfaceImg from '../../assets/geology-saturn.png';
 
 const SaturnSurface= () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#EDA249' : '',
+    backgroundColor: isActive ? '#CD5120' : '',
   });
   let sentence = `The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust. `
   return (
