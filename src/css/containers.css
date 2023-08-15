@@ -12,5 +12,23 @@
 
 }
 @media only screen and (min-width: 1300px) {
+    .statement-and-button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem;
+    }
 
+    .main-big-screen-container {
+        border: 1px solid red;
+        display: flex;
+    }
+    .main-big-screen-separator-one {
+        bordeR: 1px solid white;
+        width: 70%;
+    }
+    .main-big-screen-separator-two {
+        bordeR: 1px solid white;
+        width: 30%;
+    }
 }

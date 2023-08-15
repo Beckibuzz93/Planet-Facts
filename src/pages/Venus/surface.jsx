@@ -17,17 +17,25 @@ const VenusSurface = () => {
   return (
     <>
         <PageNavs.VenusNav pageNav='page-nav venus'/>
-        <Components.PageMainImage pageMainImage='page-main-image venus-img' mainImg={PlanetVenus} altImg='Venus illustration'/>
-        <Components.GeologyImage geologyImageClass='geo-img' geologyImg={VenusSurfaceImg} altGeoImg='Venus geology illustration'/>
-        <Components.PageMainTitle pageMainTitle='Venus' />
 
-        <div className='statement-and-button-container'>
-          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Venus'/>
+        <div className='main-big-screen-container'>
+          <div className='main-big-screen-separator-one'>
+            <Components.PageMainImage pageMainImage='page-main-image venus-img' mainImg={PlanetVenus} altImg='Venus illustration'/>
+            <Components.GeologyImage geologyImageClass='geo-img' geologyImg={VenusSurfaceImg} altGeoImg='Venus geology illustration'/>
+          </div>
 
-          <div className='page-button-container'>
-            <NavLink className='page-main-btn' style={styles} to="/Venus"><span>01</span>Overview</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/VenusStructure"><span>02</span>Structure</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/VenusSurface"><span>03</span>Surface</NavLink>
+          <div className='main-big-screen-separator-two'>
+            <Components.PageMainTitle pageMainTitle='Venus' />
+
+            <div className='statement-and-button-container'>
+              <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Venus'/>
+
+              <div className='page-button-container'>
+                <NavLink className='page-main-btn' style={styles} to="/Venus"><span>01</span>Overview</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/VenusStructure"><span>02</span>Structure</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/VenusSurface"><span>03</span>Surface</NavLink>
+              </div>
+            </div>
           </div>
         </div>
 

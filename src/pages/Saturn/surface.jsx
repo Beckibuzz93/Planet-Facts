@@ -17,17 +17,23 @@ const SaturnSurface= () => {
   return (
     <>
         <PageNavs.SaturnNav pageNav='page-nav saturn'/>
-        <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Saturn illustration'/>
-        <Components.GeologyImage geologyImageClass='geo-img' geologyImg={SaturnSurfaceImg} altGeoImg='Mercury geology illustration'/>
-        <Components.PageMainTitle pageMainTitle='Saturn' />
+        <div className='main-big-screen-container'>
+          <div className='main-big-screen-separator-one'>
+            <Components.PageMainImage pageMainImage='page-main-image saturn-img' mainImg={PlanetSaturn} altImg='Saturn illustration'/>
+            <Components.GeologyImage geologyImageClass='geo-img' geologyImg={SaturnSurfaceImg} altGeoImg='Mercury geology illustration'/>
+          </div>
+          <div className='main-big-screen-separator-two'>
+            <Components.PageMainTitle pageMainTitle='Saturn' />
 
-        <div className='statement-and-button-container'>
-          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
+            <div className='statement-and-button-container'>
+              <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Saturn'/>
 
-          <div className='page-button-container'>
-            <NavLink className='page-main-btn' style={styles} to="/Saturn"><span>01</span>Overview</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/SaturnStructure"><span>02</span>Structure</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/SaturnSurface"><span>03</span>Surface</NavLink>
+              <div className='page-button-container'>
+                <NavLink className='page-main-btn' style={styles} to="/Saturn"><span>01</span>Overview</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/SaturnStructure"><span>02</span>Structure</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/SaturnSurface"><span>03</span>Surface</NavLink>
+              </div>
+            </div>
           </div>
         </div>
 

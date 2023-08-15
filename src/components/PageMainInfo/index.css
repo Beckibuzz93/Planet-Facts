@@ -77,5 +77,26 @@
 
 }
 @media only screen and (min-width: 1300px) {
-
+    .main-page-info-container {
+        margin: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-page-info {
+        background: transparent;
+        color: aliceblue;
+        text-transform: uppercase;
+        border: 1px solid rgba(151, 151, 151, 0.2);
+        padding: 1rem 5rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-page-info h4{
+        letter-spacing: 1px;
+        color: #838391;
+    }
+    .main-page-info h5{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 }

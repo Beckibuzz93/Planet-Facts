@@ -17,16 +17,23 @@ const Mercury = (props) => {
   return (
     <>
         <PageNavs.MercuryNav pageNav='page-nav mercury'/>
-        <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
-        <Components.PageMainTitle pageMainTitle='Mercury' />
 
-        <div className='statement-and-button-container'>
-          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
+        <div className='main-big-screen-container'>
+          <div className='main-big-screen-separator-one'>
+            <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
+          </div>
+          <div className='main-big-screen-separator-two'>
+            <Components.PageMainTitle pageMainTitle='Mercury' />
 
-          <div className='page-button-container'>
-            <NavLink className='page-main-btn' style={styles} to="/Mercury"><span>01</span>Overview</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/MercuryStructure"><span>02</span>Structure</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/MercurySurface"><span>03</span>Surface</NavLink>
+            <div className='statement-and-button-container'>
+              <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
+
+              <div className='page-button-container'>
+                <NavLink className='page-main-btn' style={styles} to="/Mercury"><span>01</span>Overview</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/MercuryStructure"><span>02</span>Structure</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/MercurySurface"><span>03</span>Surface</NavLink>
+              </div>
+            </div>
           </div>
         </div>
 

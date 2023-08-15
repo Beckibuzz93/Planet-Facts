@@ -15,16 +15,22 @@ const Uranus = () => {
   return (
     <>
         <PageNavs.UranusNav pageNav='page-nav uranus'/>
-        <Components.PageMainImage pageMainImage='page-main-image uranus-img' mainImg={PlanetUranus} altImg='Uranus illustration'/>
-        <Components.PageMainTitle pageMainTitle='Uranus' />
+        <div className='main-big-screen-container'>
+          <div className='main-big-screen-separator-one'>
+            <Components.PageMainImage pageMainImage='page-main-image uranus-img' mainImg={PlanetUranus} altImg='Uranus illustration'/>
+          </div>
+          <div className='main-big-screen-separator-two'>
+            <Components.PageMainTitle pageMainTitle='Uranus' />
 
-        <div className='statement-and-button-container'>
-          <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Uranus'/>
+            <div className='statement-and-button-container'>
+              <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Uranus'/>
 
-          <div className='page-button-container'>
-            <NavLink className='page-main-btn' style={styles} to="/Uranus"><span>01</span>Overview</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/UranusStructure"><span>02</span>Structure</NavLink>
-            <NavLink className='page-main-btn' style={styles} to="/UranusSurface"><span>03</span>Surface</NavLink>
+              <div className='page-button-container'>
+                <NavLink className='page-main-btn' style={styles} to="/Uranus"><span>01</span>Overview</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/UranusStructure"><span>02</span>Structure</NavLink>
+                <NavLink className='page-main-btn' style={styles} to="/UranusSurface"><span>03</span>Surface</NavLink>
+              </div>
+            </div>
           </div>
         </div>
 
