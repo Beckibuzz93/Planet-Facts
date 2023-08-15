@@ -9,7 +9,7 @@ import PlanetJupiter from '../../assets/planet-jupiter-internal.svg';
 
 const JupiterStructure = () => {
   const styles = ({ isActive }) => ({ 
-    backgroundColor: isActive ? '#D14C32' : '',
+    backgroundColor: isActive ? '#D83A34' : '',
   });
   let sentence = `When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core.`
   return (
