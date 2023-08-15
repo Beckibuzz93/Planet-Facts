@@ -20,15 +20,14 @@
     }
 
     .main-big-screen-container {
-        border: 1px solid red;
+        margin-top: 5rem;
+        min-height: 60vh;
         display: flex;
     }
     .main-big-screen-separator-one {
-        bordeR: 1px solid white;
-        width: 70%;
+        width: 60%;
     }
     .main-big-screen-separator-two {
-        bordeR: 1px solid white;
         width: 30%;
     }
 }
