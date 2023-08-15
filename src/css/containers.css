@@ -20,9 +20,11 @@
     }
 
     .main-big-screen-container {
-        margin-top: 5rem;
         min-height: 60vh;
         display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 5rem;
     }
     .main-big-screen-separator-one {
         width: 60%;
