@@ -23,40 +23,90 @@
         border-bottom: 3px solid #419EBB;
         margin-bottom: 0rem;
     }
+    .mercury a.active {
+        border-bottom: 3px solid #419EBB;
+        margin-bottom: 0rem;
+        color: #FFF;
+    }
     .earth a:hover {
         border-bottom: 3px solid #6D2ED5;
         margin-bottom: 0rem;
+    }
+    .earth a.active {
+        border-bottom: 3px solid #6D2ED5;
+        margin-bottom: 0rem;
+        color: #FFF;
     }
     .jupiter a:hover {
         border-bottom: 3px solid #D83A34;
         margin-bottom: 0rem;
     }
+    .jupiter a.active {
+        border-bottom: 3px solid #D83A34;
+        margin-bottom: 0rem;
+        color: #FFF;
+    }
     .mars a:hover {
         border-bottom: 3px solid #D14C32;
         margin-bottom: 0rem;
+    }
+    .mars a.active {
+        border-bottom: 3px solid #D14C32;
+        margin-bottom: 0rem;
+        color: #FFF;
     }
     .neptune a:hover {
         border-bottom: 3px solid #2D68F0;
         margin-bottom: 0rem;
     }
+    .neptune a.active {
+        border-bottom: 3px solid #2D68F0;
+        margin-bottom: 0rem;
+        color: #FFF;
+    }
     .saturn a:hover {
         border-bottom: 3px solid #CD5120;
         margin-bottom: 0rem;
+    }
+    .saturn a.active {
+        border-bottom: 3px solid #CD5120;
+        margin-bottom: 0rem;
+        color: #FFF;
     }
     .uranus a:hover {
         border-bottom: 3px solid #1ec2a4;
         margin-bottom: 0rem;
     }
+    .uranus a.active {
+        border-bottom: 3px solid #1ec2a4;
+        margin-bottom: 0rem;
+        color: #FFF;
+    }
     .venus a:hover {
         border-bottom: 3px solid #EDA249;
         margin-bottom: 0rem;
+    }
+    .venus a.active {
+        border-bottom: 3px solid #EDA249;
+        margin-bottom: 0rem;
+        color: #FFF;
     }
     
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
+    .page-nav {
+        border: 1px solid red;
+    }
+    .page-nav a {
 
+    }
 }
 @media only screen and (min-width: 1300px) {
+    .page-nav {
+        border: 1px solid red;
+    }
+    .page-nav a {
 
+    }
 }
