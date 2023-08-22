@@ -43,8 +43,9 @@
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
     .page-main-statement-container {
-        width: 45%;
         text-align: left;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .page-main-statement {
         text-transform: none;

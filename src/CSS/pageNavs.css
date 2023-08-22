@@ -1,5 +1,8 @@
 
 @media only screen and (max-width: 760px) {
+    .page-navigation {
+        display: none;
+    }
     .page-nav {
         height: auto;
         display: flex;
@@ -18,6 +21,9 @@
         padding: 0rem 0.5rem 0rem 0.5rem;
         text-transform: uppercase;
         border-bottom: 4px solid transparent;
+    }
+    .page-nav span {
+        display: none;
     }
     .mercury a:hover {
         border-bottom: 3px solid #419EBB;
@@ -96,17 +102,207 @@
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
     .page-nav {
-        border: 1px solid red;
+        display: none;
     }
-    .page-nav a {
+    .main-page-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .page-navigation {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .page-navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .page-navigation ul a {
+        width: 80%;
+        background: transparent;
+        color: aliceblue;
+        text-transform: uppercase;
+        border: 1px solid rgba(151, 151, 151, 0.2);
+        padding: 1rem 1rem;
+        cursor: pointer;
+        text-align: start;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #838391;
+    }
+    .page-navigation ul a:hover {
+        background-color: rgba(151, 151, 151, 0.2);
+    }
+    .title-and-statement-container {
+        width: 60%;
+    }
 
+    .mercury a.active {
+        background-color: #419EBB;
+        color: #FFF;
+    }
+    .mercury a.active:hover {
+        background-color: #419EBB;
+        color: #FFF;
+    }
+    .earth a.active {
+        background-color: #6D2ED5;
+        color: #FFF;
+    }
+    .earth a.active:hover {
+        background-color: #6D2ED5;
+        color: #FFF;
+    }
+    .jupiter a.active {
+        background-color:  #D83A34;
+        color: #FFF;
+    }
+    .jupiter a.active:hover {
+        background-color:  #D83A34;
+        color: #FFF;
+    }
+    .mars a.active {
+        background-color:  #D14C32;
+        color: #FFF;
+    }
+    .mars a.active:hover {
+        background-color:  #D14C32;
+        color: #FFF;
+    }
+    .neptune a.active {
+        background-color:  #2D68F0;
+        color: #FFF;
+    }
+    .neptune a.active:hover {
+        background-color:  #2D68F0;
+        color: #FFF;
+    }
+    .saturn a.active {
+        background-color:  #CD5120;
+        color: #FFF;
+    }
+    .saturn a.active:hover {
+        background-color:  #CD5120;
+        color: #FFF;
+    }
+    .uranus a.active {
+        background-color:  #1ec2a4;
+        color: #FFF;
+    }
+    .uranus a.active:hover {
+        background-color:  #1ec2a4;
+        color: #FFF;
+    }
+    .venus a.active {
+        background-color:  #EDA249;
+        color: #FFF;
+    }
+    .venus a.active:hover {
+        background-color:  #EDA249;
+        color: #FFF;
     }
 }
 @media only screen and (min-width: 1300px) {
     .page-nav {
-        border: 1px solid red;
+        display: none;
     }
-    .page-nav a {
+    .main-page-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .page-navigation {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .page-navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .page-navigation ul a {
+        width: 80%;
+        background: transparent;
+        color: aliceblue;
+        text-transform: uppercase;
+        border: 1px solid rgba(151, 151, 151, 0.2);
+        padding: 1rem 1rem;
+        cursor: pointer;
+        text-align: start;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #838391;
+    }
+    .page-navigation ul a:hover {
+        background-color: rgba(151, 151, 151, 0.2);
+    }
+    .title-and-statement-container {
+        width: 60%;
+    }
 
+    .mercury a.active {
+        background-color: #419EBB;
+        color: #FFF;
+    }
+    .mercury a.active:hover {
+        background-color: #419EBB;
+        color: #FFF;
+    }
+    .earth a.active {
+        background-color: #6D2ED5;
+        color: #FFF;
+    }
+    .earth a.active:hover {
+        background-color: #6D2ED5;
+        color: #FFF;
+    }
+    .jupiter a.active {
+        background-color:  #D83A34;
+        color: #FFF;
+    }
+    .jupiter a.active:hover {
+        background-color:  #D83A34;
+        color: #FFF;
+    }
+    .mars a.active {
+        background-color:  #D14C32;
+        color: #FFF;
+    }
+    .mars a.active:hover {
+        background-color:  #D14C32;
+        color: #FFF;
+    }
+    .neptune a.active {
+        background-color:  #2D68F0;
+        color: #FFF;
+    }
+    .neptune a.active:hover {
+        background-color:  #2D68F0;
+        color: #FFF;
+    }
+    .saturn a.active {
+        background-color:  #CD5120;
+        color: #FFF;
+    }
+    .saturn a.active:hover {
+        background-color:  #CD5120;
+        color: #FFF;
+    }
+    .uranus a.active {
+        background-color:  #1ec2a4;
+        color: #FFF;
+    }
+    .uranus a.active:hover {
+        background-color:  #1ec2a4;
+        color: #FFF;
+    }
+    .venus a.active {
+        background-color:  #EDA249;
+        color: #FFF;
+    }
+    .venus a.active:hover {
+        background-color:  #EDA249;
+        color: #FFF;
     }
 }
