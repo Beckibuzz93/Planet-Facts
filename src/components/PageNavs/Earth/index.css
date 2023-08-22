@@ -1,6 +1,2 @@
-.navbar-mer {
-    bordeR: 1px solid red;
-    position: absolute;
-    right: 10%;
-    bottom: 20%;
-}
+@import url(../../../CSS//pageNavs.css);
+

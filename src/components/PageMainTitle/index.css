@@ -1,0 +1,44 @@
+@import url(../../index.css);
+
+.pages-main-title {
+    font-family: 'Antonio', Medium;
+    font-size: 2.8rem;
+    line-height: 3.71rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 760px) {
+    .pages-main-title {
+        font-family: 'Antonio', Medium;
+        font-size: 2.8rem;
+        line-height: 3.71rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+    .pages-main-title {
+        font-family: 'Antonio', Medium;
+        font-size: 3.8rem;
+        line-height: 3.71rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 2rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .pages-main-title {
+        font-family: 'Antonio', Medium;
+        font-size: 4.8rem;
+        line-height: 3.71rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 2rem;
+    }
+}

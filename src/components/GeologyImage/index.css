@@ -1,0 +1,45 @@
+@media only screen and (max-width: 760px) {
+    .geology-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -13.5rem;
+        margin-bottom: 4rem;
+    }
+    .geo-img {
+        width: 8rem;
+        z-index: 1;
+    }
+    
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+    .geology-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -11.5rem;
+        margin-bottom: 4rem;
+    }
+    .geo-img {
+        width: 8rem;
+        z-index: 1;
+    }
+    
+}
+@media only screen and (min-width: 1300px) {
+    .geology-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -11.5rem;
+        margin-bottom: 4rem;
+    }
+    .geo-img {
+        width: 8rem;
+        z-index: 1;
+    }
+}

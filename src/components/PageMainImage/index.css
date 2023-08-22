@@ -1,0 +1,190 @@
+.page-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .page-main-image.earth-img {
+        transform: scale(0.45);
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+        -o-transform: scale(0.45);
+}
+    .page-main-image.jupiter-img {
+        transform: scale(0.582);
+        -webkit-transform: scale(0.582);
+        -moz-transform: scale(0.582);
+        -ms-transform: scale(0.582);
+        -o-transform: scale(0.582);
+    }
+    .page-main-image.mars-img {
+        transform: scale(0.52);
+        -webkit-transform: scale(0.52);
+        -moz-transform: scale(0.52);
+        -ms-transform: scale(0.52);
+        -o-transform: scale(0.52);
+}
+    .page-main-image.mercury-img {
+        transform: scale(0.50);
+        -webkit-transform: scale(0.50);
+        -moz-transform: scale(0.50);
+        -ms-transform: scale(0.50);
+        -o-transform: scale(0.50);
+}
+    .page-main-image.neptune-img {
+        transform: scale(0.45);
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+        -o-transform: scale(0.45);
+    }
+    .page-main-image.saturn-img {
+        transform: scale(0.648);
+        -webkit-transform: scale(0.648);
+        -moz-transform: scale(0.648);
+        -ms-transform: scale(0.648);
+        -o-transform: scale(0.648);
+}
+    .page-main-image.uranus-img {
+        transform: scale(0.458);
+        -webkit-transform: scale(0.458);
+        -moz-transform: scale(0.458);
+        -ms-transform: scale(0.458);
+        -o-transform: scale(0.458);
+    }
+    .page-main-image.venus-img {
+        transform: scale(0.40);
+        -webkit-transform: scale(0.40);
+        -moz-transform: scale(0.40);
+        -ms-transform: scale(0.40);
+        -o-transform: scale(0.40);
+    }
+    
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+    .page-main-image.earth-img {
+        transform: scale(0.55);
+        -webkit-transform: scale(0.55);
+        -moz-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+        -o-transform: scale(0.55);
+}
+    .page-main-image.jupiter-img {
+        transform: scale(0.682);
+        -webkit-transform: scale(0.682);
+        -moz-transform: scale(0.682);
+        -ms-transform: scale(0.682);
+        -o-transform: scale(0.682);
+}
+    .page-main-image.mars-img {
+        transform: scale(0.62);
+        -webkit-transform: scale(0.62);
+        -moz-transform: scale(0.62);
+        -ms-transform: scale(0.62);
+        -o-transform: scale(0.62);
+}
+    .page-main-image.mercury-img {
+        transform: scale(0.60);
+        -webkit-transform: scale(0.60);
+        -moz-transform: scale(0.60);
+        -ms-transform: scale(0.60);
+        -o-transform: scale(0.60);
+}
+    .page-main-image.neptune-img {
+        transform: scale(0.55);
+        -webkit-transform: scale(0.55);
+        -moz-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+        -o-transform: scale(0.55);
+}
+    .page-main-image.saturn-img {
+        transform: scale(0.748);
+        -webkit-transform: scale(0.748);
+        -moz-transform: scale(0.748);
+        -ms-transform: scale(0.748);
+        -o-transform: scale(0.748);
+}
+    .page-main-image.uranus-img {
+        transform: scale(0.558);
+        -webkit-transform: scale(0.558);
+        -moz-transform: scale(0.558);
+        -ms-transform: scale(0.558);
+        -o-transform: scale(0.558);
+}
+    .page-main-image.venus-img {
+        transform: scale(0.50);
+        -webkit-transform: scale(0.50);
+        -moz-transform: scale(0.50);
+        -ms-transform: scale(0.50);
+        -o-transform: scale(0.50);
+    }
+    .page-img-container {
+        margin-top: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .page-main-image.earth-img {
+        transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+        -moz-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+        -o-transform: scale(0.65);
+}
+    .page-main-image.jupiter-img {
+        transform: scale(0.782);
+        -webkit-transform: scale(0.782);
+        -moz-transform: scale(0.782);
+        -ms-transform: scale(0.782);
+        -o-transform: scale(0.782);
+}
+    .page-main-image.mars-img {
+        transform: scale(0.72);
+        -webkit-transform: scale(0.72);
+        -moz-transform: scale(0.72);
+        -ms-transform: scale(0.72);
+        -o-transform: scale(0.72);
+}
+    .page-main-image.mercury-img {
+        transform: scale(0.70);
+        -webkit-transform: scale(0.70);
+        -moz-transform: scale(0.70);
+        -ms-transform: scale(0.70);
+        -o-transform: scale(0.70);
+}
+    .page-main-image.neptune-img {
+        transform: scale(0.65);
+        -webkit-transform: scale(0.65);
+        -moz-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+        -o-transform: scale(0.65);
+}
+    .page-main-image.saturn-img {
+        transform: scale(0.848);
+        -webkit-transform: scale(0.848);
+        -moz-transform: scale(0.848);
+        -ms-transform: scale(0.848);
+        -o-transform: scale(0.848);
+}
+    .page-main-image.uranus-img {
+        transform: scale(0.658);
+        -webkit-transform: scale(0.658);
+        -moz-transform: scale(0.658);
+        -ms-transform: scale(0.658);
+        -o-transform: scale(0.658);
+}
+    .page-main-image.venus-img {
+        transform: scale(0.60);
+        -webkit-transform: scale(0.60);
+        -moz-transform: scale(0.60);
+        -ms-transform: scale(0.60);
+        -o-transform: scale(0.60);
+    }
+    .page-img-container {
+        margin-top: 4rem;
+    }
+}

@@ -1,9 +1,21 @@
+import * as Components from '../../Components'
+
+import PlanetMercury from '../../assets/planet-mercury.svg';
+
+import MercurySurfaceImg from '../../assets/geology-mercury.png';
+
 const MercurySurface = () => {
+    const sentence = `Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.`
     return(
         <>
-            <h1>Mercury Surface</h1>
+            <Components.PageMainImage pageMainImage='page-main-image mercury-img' mainImg={PlanetMercury} altImg='Mercury illustration'/>
+            <Components.GeologyImg geologyImageClass='geo-img' geologyImg={MercurySurfaceImg} altGeoImg='Mercury geology illustration'/>
 
+            <Components.PageMainTitle pageMainTitle='Mercury' />
 
+            <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Mercury_(planet)'/>
+
+            <Components.PageMainInfo rotationTime='58.6 days' revolutionTime='87.97 days' radius='2,439.7 km' avgTemp='430°C'/>
         </>
     )
 }

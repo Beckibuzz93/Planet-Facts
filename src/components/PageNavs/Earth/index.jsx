@@ -4,12 +4,14 @@ import './index.css'
 
 const Earth = () => {
     const styles = ({ isActive }) => ({ 
-        color: isActive ? '#FFF' : '#838391'
+        borderBottom: isActive ? '3px solid #6D2ED5' : '',
+        color: isActive ? '#FFF' : '#838391',
+        marginBottom: isActive ? '0rem' : ''
     });
     return(
         <>
             <nav>
-                <ul className="navbar-mer">
+                <ul className="page-nav earth">
                     <NavLink style={styles} to='/Earth' end> Overview </NavLink>
                     <NavLink style={styles} to='/Earth/structure'> Structure </NavLink>
                     <NavLink style={styles} to='/Earth/surface'> Surface </NavLink>

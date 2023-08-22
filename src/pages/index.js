@@ -1,4 +1,5 @@
 export {default as LandingPage} from './Landing Page'
+export {default as PageNotFound} from'./Page Not Found'
 
 export {default as EarthOverview} from './Earth/overview'
 export {default as EarthStructure} from './Earth/structure'

@@ -4,12 +4,14 @@ import './index.css'
 
 const Neptune = () => {
     const styles = ({ isActive }) => ({ 
-        color: isActive ? '#FFF' : '#838391'
+        borderBottom: isActive ? '3px solid #2D68F0' : '',
+        color: isActive ? '#FFF' : '#838391',
+        marginBottom: isActive ? '0rem' : ''
     });
     return(
         <>
             <nav>
-                <ul className="navbar-mer">
+                <ul className="page-nav neptune">
                     <NavLink style={styles} to='/Neptune' end> Overview </NavLink>
                     <NavLink style={styles} to='/Neptune/structure'> Structure </NavLink>
                     <NavLink style={styles} to='/Neptune/surface'> Surface </NavLink>

@@ -1,0 +1,62 @@
+
+@media only screen and (max-width: 760px) {
+    .page-nav {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+    }
+    .page-nav a {
+        font-family: 'League_Spartan';
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 1.8px;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+        text-transform: uppercase;
+        border-bottom: 4px solid transparent;
+    }
+    .mercury a:hover {
+        border-bottom: 3px solid #419EBB;
+        margin-bottom: 0rem;
+    }
+    .earth a:hover {
+        border-bottom: 3px solid #6D2ED5;
+        margin-bottom: 0rem;
+    }
+    .jupiter a:hover {
+        border-bottom: 3px solid #D83A34;
+        margin-bottom: 0rem;
+    }
+    .mars a:hover {
+        border-bottom: 3px solid #D14C32;
+        margin-bottom: 0rem;
+    }
+    .neptune a:hover {
+        border-bottom: 3px solid #2D68F0;
+        margin-bottom: 0rem;
+    }
+    .saturn a:hover {
+        border-bottom: 3px solid #CD5120;
+        margin-bottom: 0rem;
+    }
+    .uranus a:hover {
+        border-bottom: 3px solid #1ec2a4;
+        margin-bottom: 0rem;
+    }
+    .venus a:hover {
+        border-bottom: 3px solid #EDA249;
+        margin-bottom: 0rem;
+    }
+    
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1300px) {
+
+}
+@media only screen and (min-width: 1300px) {
+
+}

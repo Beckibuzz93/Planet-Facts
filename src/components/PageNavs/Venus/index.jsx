@@ -4,12 +4,14 @@ import './index.css'
 
 const Venus = () => {
     const styles = ({ isActive }) => ({ 
-        color: isActive ? '#FFF' : '#838391'
+        borderBottom: isActive ? '3px solid #EDA249' : '',
+        color: isActive ? '#FFF' : '#838391',
+        marginBottom: isActive ? '0rem' : ''
     });
     return(
         <>
             <nav>
-                <ul className="navbar-mer">
+                <ul className="page-nav venus">
                     <NavLink style={styles} to='/Venus' end> Overview </NavLink>
                     <NavLink style={styles} to='/Venus/structure'> Structure </NavLink>
                     <NavLink style={styles} to='/Venus/surface'> Surface </NavLink>

@@ -86,7 +86,7 @@ const NavBar = (props) => {
                                 </div>
                             </li>
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} to="/Mercury">                             
+                        <NavLink onClick={BurgerNavClick} style={mercuryStyles} to="/Mercury">                             
                             <li>
                                 <div>
                                     <div className='ball baby-blue-bg'></div>

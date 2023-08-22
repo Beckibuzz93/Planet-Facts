@@ -4,12 +4,14 @@ import './index.css'
 
 const Mars = () => {
     const styles = ({ isActive }) => ({ 
-        color: isActive ? '#FFF' : '#838391'
+        borderBottom: isActive ? '3px solid #D14C32' : '',
+        color: isActive ? '#FFF' : '#838391',
+        marginBottom: isActive ? '0rem' : ''
     });
     return(
         <>
             <nav>
-                <ul className="navbar-mer">
+                <ul className="page-nav mars">
                     <NavLink style={styles} to='/Mars' end> Overview </NavLink>
                     <NavLink style={styles} to='/Mars/structure'> Structure </NavLink>
                     <NavLink style={styles} to='/Mars/surface'> Surface </NavLink>
