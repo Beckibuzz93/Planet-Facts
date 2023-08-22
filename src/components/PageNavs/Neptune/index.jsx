@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #2D68F0' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const NeptuneNav = (props) => {
-
+const Neptune = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Neptune"> Overview </NavLink>
-                <NavLink style={styles} to="/NeptuneStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/NeptuneSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Neptune' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Neptune/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Neptune/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default NeptuneNav
+export default Neptune

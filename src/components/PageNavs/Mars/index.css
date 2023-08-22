@@ -1,4 +1,6 @@
-@import url(../../../css//pageNav.css);
-.mars a:hover {
-    border-bottom: 3px solid #D14C32;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

@@ -1,5 +1,6 @@
-@import url(../../../css//pageNav.css);
-
-.jupiter a:hover {
-    border-bottom: 3px solid #D83A34;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

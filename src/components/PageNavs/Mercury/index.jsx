@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #419EBB' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const MercuryNav = (props) => {
-
+const Mercury = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Mercury"> Overview </NavLink>
-                <NavLink style={styles} to="/MercuryStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/MercurySurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/mercury' end> Overview </NavLink>
+                    <NavLink style={styles} to='/mercury/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/mercury/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default MercuryNav
+export default Mercury

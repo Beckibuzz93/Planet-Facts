@@ -1,5 +1,6 @@
-@import url(../../../css//pageNav.css);
-.uranus a:hover {
-    border-bottom: 3px solid #1ec2a4;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }
-

@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #D14C32' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const MarsNav = (props) => {
-
+const Mars = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Mars"> Overview </NavLink>
-                <NavLink style={styles} to="/MarsStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/MarsSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Mars' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Mars/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Mars/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default MarsNav
+export default Mars

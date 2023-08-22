@@ -1,4 +1,6 @@
-@import url(../../../css//pageNav.css);
-.venus a:hover {
-    border-bottom: 3px solid #EDA249;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

@@ -1,4 +1,6 @@
-@import url(../../../css//pageNav.css);
-.neptune a:hover {
-    border-bottom: 3px solid #2D68F0;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

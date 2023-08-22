@@ -1,4 +1,6 @@
-@import url(../../../css//pageNav.css);
-.mercury a:hover {
-    border-bottom: 3px solid #419EBB;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

@@ -1,5 +1,6 @@
-@import url(../../../css//pageNav.css);
-
-.earth a:hover {
-    border-bottom: 3px solid #6D2ED5;
+.navbar-mer {
+    bordeR: 1px solid red;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 }

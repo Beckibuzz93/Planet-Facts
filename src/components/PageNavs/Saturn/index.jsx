@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #EDA249' : '', 
-    color: isActive ? '#FFF' : '#CD5120'
-});
-
-const SaturnNav = (props) => {
-
+const Saturn = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Saturn"> Overview </NavLink>
-                <NavLink style={styles} to="/SaturnStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/SaturnSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Saturn' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Saturn/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Saturn/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default SaturnNav
+export default Saturn

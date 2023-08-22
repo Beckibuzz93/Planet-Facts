@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #EDA249' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const VenusNav = (props) => {
-
+const Venus = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Venus"> Overview </NavLink>
-                <NavLink style={styles} to="/VenusStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/VenusSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Venus' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Venus/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Venus/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default VenusNav
+export default Venus

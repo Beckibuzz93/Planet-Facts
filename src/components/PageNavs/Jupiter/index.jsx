@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #D83A34' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const JupiterNav = (props) => {
-
+const Jupiter = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Jupiter"> Overview </NavLink>
-                <NavLink style={styles} to="/JupiterStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/JupiterSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Jupiter' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Jupiter/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Jupiter/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default JupiterNav
+export default Jupiter

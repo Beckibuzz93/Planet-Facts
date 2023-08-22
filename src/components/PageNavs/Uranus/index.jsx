@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
-const styles = ({ isActive }) => ({
-    borderBottom: isActive ? '3px solid #1ec2a4' : '', 
-    color: isActive ? '#FFF' : '#838391'
-});
-
-const UranusNav = (props) => {
-
+const Uranus = () => {
+    const styles = ({ isActive }) => ({ 
+        color: isActive ? '#FFF' : '#838391'
+    });
     return(
         <>
-            <div className={props.pageNav}>
-                <NavLink style={styles} to="/Uranus"> Overview </NavLink>
-                <NavLink style={styles} to="/UranusStructure"> Structure </NavLink>
-                <NavLink style={styles} to="/UranusSurface"> Surface </NavLink>
-            </div>
+            <nav>
+                <ul className="navbar-mer">
+                    <NavLink style={styles} to='/Uranus' end> Overview </NavLink>
+                    <NavLink style={styles} to='/Uranus/structure'> Structure </NavLink>
+                    <NavLink style={styles} to='/Uranus/surface'> Surface </NavLink>
+                </ul>
+            </nav>
+
+            <Outlet />
+
         </>
     )
 }
 
-export default UranusNav
+export default Uranus

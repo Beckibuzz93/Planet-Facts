@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 import './index.css'
 
 const NavBar = (props) => {
+    const { pathname } = useLocation();
+    console.log(pathname)
+
     const [isMenuClicked, setMenuClicked] = useState(true);
     const [burgerClass, setBurgerClass] = useState('burger-line unclicked');
     const [menuClass, setMenuClass] = useState('burger-nav-items');
@@ -21,9 +24,9 @@ const NavBar = (props) => {
     const homeStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #fff' : '',
         color: isActive ? '#FFF' : '#929292' });
-    const mercuryStyles = ({ isActive }) => ({ 
+    const mercuryStyles = ({ isActive }) =>({
         borderTop: isActive ? '3px solid #419EBB' : '',
-        color: isActive ? '#FFF' : '#929292' });    
+        color: isActive ? '#FFF' : '#929292'});    
     const venusStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #EDA249' : '',
         color: isActive ? '#FFF' : '#929292' });
@@ -45,6 +48,7 @@ const NavBar = (props) => {
     const neptuneStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #2D68F0' : '',
         color: isActive ? '#FFF' : '#929292' });
+
     return(
         <>
             <header>
@@ -82,7 +86,7 @@ const NavBar = (props) => {
                                 </div>
                             </li>
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={mercuryStyles} to="/Mercury">                             
+                        <NavLink onClick={BurgerNavClick} to="/Mercury">                             
                             <li>
                                 <div>
                                     <div className='ball baby-blue-bg'></div>
