@@ -4,7 +4,7 @@ import { screen, render, cleanup } from '@testing-library/react';
 import matchers from '@testing-library/jest-dom/matchers';
 expect.extend(matchers);
 
-import NavBar from '.';
+import NavBar from '../PageMainTitle';
 describe('NavBar', () => {
 
     beforeEach(() => {

@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './index.css'
 
 const NavBar = (props) => {
-    const { pathname } = useLocation();
-    console.log(pathname)
-
     const [isMenuClicked, setMenuClicked] = useState(true);
     const [burgerClass, setBurgerClass] = useState('burger-line unclicked');
     const [menuClass, setMenuClass] = useState('burger-nav-items');
