@@ -17,13 +17,15 @@ const JupiterOverview = () => {
 
                         <Components.PageMainStatement pageMainStatement={sentence} wikiLink='https://en.wikipedia.org/wiki/Jupiter'/>
                     </div>
+
                     <nav className="page-navigation">
                         <ul className="jupiter">
-                            <NavLink to='jupiter' end><span>01</span> Overview </NavLink>
-                            <NavLink to='jupiter/structure'><span>02</span> Structure </NavLink>
-                            <NavLink to='jupiter/surface'><span>03</span> Surface </NavLink>
+                            <NavLink to='/jupiter' end><span>01</span> Overview </NavLink>
+                            <NavLink to='/jupiter/structure'><span>02</span> Structure </NavLink>
+                            <NavLink to='/jupiter/surface'><span>03</span> Surface </NavLink>
                         </ul>
                     </nav>
+
                 </div>
             </div>
             <Components.PageMainInfo rotationTime='9.93 hours' revolutionTime='11.86 years' radius='69,911 km' avgTemp='-108°C'/>

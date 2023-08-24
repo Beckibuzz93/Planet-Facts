@@ -18,9 +18,9 @@ const JupiterStructure = () => {
                     </div>
                     <nav className="page-navigation">
                         <ul className="jupiter">
-                            <NavLink to='jupiter' end><span>01</span> Overview </NavLink>
-                            <NavLink to='jupiter/structure'><span>02</span> Structure </NavLink>
-                            <NavLink to='jupiter/surface'><span>03</span> Surface </NavLink>
+                            <NavLink to='/jupiter' end><span>01</span> Overview </NavLink>
+                            <NavLink to='/jupiter/structure'><span>02</span> Structure </NavLink>
+                            <NavLink to='/jupiter/surface'><span>03</span> Surface </NavLink>
                         </ul>
                     </nav>
                 </div>
