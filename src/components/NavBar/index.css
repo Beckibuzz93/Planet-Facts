@@ -3,7 +3,6 @@ header {
     justify-content: space-between;
     width: 100%;
     border-bottom: 1px solid rgba(151, 151, 151, 0.2);
-    height: 10vh;
 }
 header .icon h5 {
     font-size: 2rem;
@@ -143,6 +142,9 @@ nav .neptune-link:hover {
 }
 
 @media only screen and (max-width: 760px) {
+    header {
+        height: 10vh;
+    }
     header .navigation {
         display: none;
     }
@@ -195,7 +197,7 @@ nav .neptune-link:hover {
         justify-content: space-between;
         width: 100%;
         border-bottom: 1px solid rgba(151, 151, 151, 0.2);
-        height: 10vh;
+        min-height: 6rem;
     }
     header .icon h5 {
         font-size: 2rem;
