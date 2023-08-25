@@ -1,6 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
-import '../../../css/pageNavs.css'
 
 const Neptune = () => {
 
