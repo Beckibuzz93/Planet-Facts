@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import planetNotFound from '../../Assets/PlanetNotFound.svg'
+import planetNotFound from '../../assets/PlanetNotFound.svg'
 import './index.css'
 
 const PageNotFound = () => {
