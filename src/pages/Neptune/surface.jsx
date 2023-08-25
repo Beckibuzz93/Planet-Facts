@@ -3,7 +3,7 @@ import * as Components from '../../components'
 import PlanetNeptune from '../../assets/planet-neptune.svg'
 
 import NeptuneSurfaceImg from '../../assets/geology-neptune.png';
-import './index.css'
+
 const NeptuneSurface = () => {
     let sentence = `Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.`
     return(

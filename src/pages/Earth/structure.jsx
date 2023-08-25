@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetEarth from '../../assets/planet-earth-internal.svg';
-import './index.css'
+
 const EarthStructure = () => {
     const sentence = `Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.`
     return(

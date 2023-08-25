@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetUranus from '../../assets/planet-uranus.svg'
-import './index.css'
+
 const UranusOverview = () => {
     let sentence = `Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.`
     return(

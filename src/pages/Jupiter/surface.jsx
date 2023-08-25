@@ -3,7 +3,7 @@ import * as Components from '../../components'
 import PlanetJupiter from '../../assets/planet-jupiter.svg';
 
 import JupiterSurfaceImg from '../../assets/geology-jupiter.png';
-import './index.css'
+
 const JupiterSurface = () => {
     let sentence = `The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.`
     return(

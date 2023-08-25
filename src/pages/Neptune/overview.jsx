@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetNeptune from '../../assets/planet-neptune.svg'
-import './index.css'
+
 const NeptuneOverview = () => {
     let sentence = `Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.`
     return(
