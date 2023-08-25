@@ -2,8 +2,8 @@
 This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f).
 
 # Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here]()
+- Live Site URL: [Add live site URL here]()
 
 # Description
 This application is a solution to the frontend mentor challenge cited above. 
@@ -11,11 +11,11 @@ This application is a solution to the frontend mentor challenge cited above.
 # Installation 
 ## Clone this repo 
 ```bash 
-git clone git@github.com:Beckibuzz93/Client.git
+git clone git@github.com:Beckibuzz93/Planet-Facts.git
 ```
 ## Navigate to the app folder
 ```bash
-cd Beckibuzz93/Client
+cd Beckibuzz93/Planet-Facts
 ```
 <h2> For developers only! </h2>
 
@@ -27,19 +27,17 @@ npm install
 ```
 npm run dev
 ```
+
+## Run testing from terminal
+```
+Just tests - npm run test
+Coverage - npm run coverage 
+```
+
 # Technologies used
 1. ReactJS, Vite, React Router Dom, Jest(https://www.npmjs.com/package/jest)
 2. Custom CSS
 3. Google fonts
-
-### App Pictures 
-<img src='./src/Assets/App Pictures/landingPage1.PNG'> 
-<img src='./src//Assets//App Pictures/mars1.PNG'>
-<img src='./src//Assets//App Pictures//Merc1.PNG'>
-<img src='./src//Assets//App Pictures//uranus1.PNG'>
-
-### Test Coverage
-<img src='./src//Assets//App Pictures/planetsTestCoverage.PNG'>
 
 # What I learned
 
@@ -68,7 +66,7 @@ npm run dev
 <Route path='/mercury' element={<Components.MercuryNav/>}>
   <Route index element={<Pages.MercuryOverview/>}/>
   <Route path='structure' element={<Pages.MercuryStructure/>} />
-   <Route path='surface'  element={<Pages.MercurySurface/>} />
+  <Route path='surface'  element={<Pages.MercurySurface/>} />
 </Route>
 ```
 - Then in the component you would Links or NavLinks like:
