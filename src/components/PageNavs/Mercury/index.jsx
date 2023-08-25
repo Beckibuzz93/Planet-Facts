@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
-import './index.css'
+import '../../../css/pageNavs.css'
 
 const Mercury = () => {
 
