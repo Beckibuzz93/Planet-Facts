@@ -4,7 +4,7 @@ import * as Components from '../../components'
 import PlanetMars from '../../assets/planet-mars.svg'
 
 import MarsSurfaceImg from '../../assets/geology-mars.png';
-
+import './index.css'
 const MarsSurface = () => {
     let sentence = `Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.`
     return(

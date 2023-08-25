@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetNeptune from '../../assets/planet-neptune-internal.svg'
-
+import './index.css'
 const NeptuneStructure = () => {
     let sentence = `Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.`
     return(

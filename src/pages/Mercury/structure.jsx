@@ -4,7 +4,7 @@ import * as Components from '../../components'
 
 import PlanetMercury from '../../assets/planet-mercury-internal.svg';
 
-
+import './index.css'
 const MercuryStructure = () => {
     const sentence = `Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.`
     return(

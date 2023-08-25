@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetMars from '../../assets/planet-mars-internal.svg'
 
-
+import './index.css'
 const MarsStructure = () => {
     let sentence = `Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.`
     return(

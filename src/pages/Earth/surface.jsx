@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetEarth from '../../assets/planet-earth.svg';
 import EarthSurfaceImg from '../../assets/geology-earth.png';
-
+import './index.css'
 const EarthSurface = () => {
     const sentence = `The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.`
     return(

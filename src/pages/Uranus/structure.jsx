@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import * as Components from '../../components'
 import PlanetUranus from '../../assets/planet-uranus-internal.svg'
-
+import './index.css'
 const UranusStructure = () => {
     let sentence = `The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses.`
     return(

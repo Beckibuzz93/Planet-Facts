@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
+import './index.css'
 
 const Jupiter = () => {
     return(

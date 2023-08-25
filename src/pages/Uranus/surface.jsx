@@ -3,7 +3,7 @@ import * as Components from '../../components'
 import PlanetUranus from '../../assets/planet-uranus.svg'
 
 import UranusSurfaceImg from '../../assets/geology-uranus.png';
-
+import './index.css'
 const UranusSurface = () => {
     let sentence = `The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.`
     return(

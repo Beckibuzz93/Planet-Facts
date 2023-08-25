@@ -3,7 +3,7 @@ import * as Components from '../../components'
 import PlanetVenus from '../../assets/planet-venus.svg'
 
 import VenusSurfaceImg from '../../assets/geology-venus.png';
-
+import './index.css'
 const VenusSurface = () => {
     const sentence = `Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.`
     return(
