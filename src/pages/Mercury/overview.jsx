@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-import * as Components from '../../Components'
+import * as Components from '../../components'
 
 import PlanetMercury from '../../assets/planet-mercury.svg';
 

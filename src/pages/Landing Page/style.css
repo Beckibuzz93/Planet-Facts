@@ -1,4 +1,4 @@
-@import url(../../CSS//animations.css);
+@import url(../../css/animations.css);
 
 .landing-btn-container {
     animation: 2s ease-in-out 0s 1 fadeIn;

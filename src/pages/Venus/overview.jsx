@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import * as Components from '../../Components'
+import * as Components from '../../components'
 import PlanetVenus from '../../assets/planet-venus.svg'
 import './index.css'
 const VenusOverview = () => {

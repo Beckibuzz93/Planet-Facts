@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import * as Components from '../../Components'
+import * as Components from '../../components'
 import PlanetJupiter from '../../assets/planet-jupiter.svg';
 
 import JupiterSurfaceImg from '../../assets/geology-jupiter.png';
