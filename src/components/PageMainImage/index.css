@@ -1,9 +1,15 @@
+@import url(../../CSS//animations.css);
+
 .page-img-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30rem;
+}
+.page-main-image {
+    animation: slideInLeft 4s ease;
+    -webkit-animation: slideInLeft 4s ease;
 }
 
 @media only screen and (max-width: 760px) {

@@ -1,7 +1,12 @@
+@import url(../../CSS//animations.css);
 .title-icon-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.planets-icon {
+    animation: 4s ease slideInTop;
+    -webkit-animation: 4s ease slideInTop;
 }
 
 @media only screen and (max-width: 760px) {
@@ -10,7 +15,7 @@
         margin-top: 2rem;
         width: 12rem;
         height: 12rem;
-    }
+}
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1300px) {
@@ -26,6 +31,6 @@
         margin-top: 2rem;
         width: 24rem;
         height: 24rem;
-    }
+}
 
 }

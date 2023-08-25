@@ -11,8 +11,9 @@ const PageMainStatement = (props) => {
                 <h4 className='page-main-statement'>{props.pageMainStatement}</h4>
                 <div className='wiki-link'>
                     <p>Source:</p>
-                    <a target="_blank" href={props.wikiLink}>Wikipedia</a>
-                    <img className='wiki-icon' src={arrowIcon} alt='arrow icon' />
+                    <a target="_blank" href={props.wikiLink}>Wikipedia
+                        <img className='wiki-icon' src={arrowIcon} alt='arrow icon' />
+                    </a>
                 </div>
             </div>
         </>

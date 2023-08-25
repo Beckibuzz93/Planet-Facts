@@ -6,11 +6,12 @@
     color: #929292;
 }
 .page-not-found-container h1 {
-    padding: 4rem;
+    margin-top: 6.5rem;
+    margin-bottom: 4rem;
     font-size: 6rem;
 }
 .page-not-found-container h3 {
-    padding: 4rem;
+    margin: 4rem;
     font-size: 6rem;
     text-transform: none;
 }
@@ -20,8 +21,8 @@
 }
 .page-not-found-container a {
     text-decoration: underline;
-    color: #929292;
+    color: #FFF;
 }
 .page-not-found-container a:hover {
-    color: #FFF;
+    color: #929292;
 }

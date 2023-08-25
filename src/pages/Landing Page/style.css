@@ -1,3 +1,9 @@
+@import url(../../CSS//animations.css);
+
+.landing-btn-container {
+    animation: 2s ease-in-out 0s 1 fadeIn;
+    -webkit-animation: 2s ease-in-out 0s 1 fadeIn;
+}
 .landing-btn-container a {
     width: 80%;
     background: transparent;
