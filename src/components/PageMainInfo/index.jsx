@@ -7,7 +7,7 @@ const PageMainInfo = (props) => {
 
     return(
         <>
-            <div className='main-page-info-container'>
+            <div role='page-info' className='main-page-info-container'>
                 <div className='main-page-info'>
                     <h4>Rotation time</h4>
                     <h5>{props.rotationTime}</h5>

@@ -6,7 +6,7 @@ const MainStatement = (props) => {
 
     return(
         <>
-            <p className='main-statement'>{props.mainStatement}</p>
+            <p role='main-statement' className='main-statement'>{props.mainStatement}</p>
         </>
     )
 }

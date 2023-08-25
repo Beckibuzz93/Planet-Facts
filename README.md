@@ -38,6 +38,9 @@ npm run dev
 <img src='./src//Assets//App Pictures//Merc1.PNG'>
 <img src='./src//Assets//App Pictures//uranus1.PNG'>
 
+### Test Coverage
+<img src='./src//Assets//App Pictures/planetsTestCoverage.PNG'>
+
 # What I learned
 
 ### Using props for CSS 

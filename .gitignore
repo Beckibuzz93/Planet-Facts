@@ -35,5 +35,7 @@ dist-ssr
 
 
 notes.md
-package-lock.json/
+
+package-lock.json
+
 coverage/

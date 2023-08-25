@@ -18,6 +18,7 @@ const NavBar = (props) => {
         }
         setMenuClicked(!isMenuClicked)
     }
+    
     const homeStyles = ({ isActive }) => ({ 
         borderTop: isActive ? '3px solid #fff' : '',
         color: isActive ? '#FFF' : '#929292' });
@@ -48,31 +49,31 @@ const NavBar = (props) => {
 
     return(
         <>
-            <header>
-                <div className='icon'>
+            <header role='header'>
+                <div role='icon' className='icon'>
                     <h5> The Planets </h5>
                 </div>
                 <nav className='navigation'>
-                    <NavLink className='home-link' style={homeStyles} to="/"> Home </NavLink>
-                    <NavLink className='mercury-link' style={mercuryStyles} to="/Mercury"> Mercury </NavLink>
-                    <NavLink className='venus-link' style={venusStyles} to="/Venus"> Venus </NavLink>
-                    <NavLink className='earth-link' style={earthStyles} to="/Earth"> Earth </NavLink>
-                    <NavLink className='mars-link' style={marsStyles} to="/Mars"> Mars </NavLink>
-                    <NavLink className='jupiter-link' style={jupiterStyles} to="/Jupiter"> Jupiter </NavLink>
-                    <NavLink className='saturn-link' style={saturnStyles} to="/Saturn"> Saturn </NavLink>
-                    <NavLink className='uranus-link' style={uranusStyles} to="/Uranus"> Uranus </NavLink>
-                    <NavLink className='neptune-link' style={neptuneStyles} to="/Neptune"> Neptune </NavLink>
+                    <NavLink role='home-link' className='home-link' style={homeStyles} to="/"> Home </NavLink>
+                    <NavLink role='mercury-link' className='mercury-link' style={mercuryStyles} to="/Mercury"> Mercury </NavLink>
+                    <NavLink role='venus-link' className='venus-link' style={venusStyles} to="/Venus"> Venus </NavLink>
+                    <NavLink role='earth-link' className='earth-link' style={earthStyles} to="/Earth"> Earth </NavLink>
+                    <NavLink role='mars-link' className='mars-link' style={marsStyles} to="/Mars"> Mars </NavLink>
+                    <NavLink role='jupiter-link' className='jupiter-link' style={jupiterStyles} to="/Jupiter"> Jupiter </NavLink>
+                    <NavLink role='saturn-link' className='saturn-link' style={saturnStyles} to="/Saturn"> Saturn </NavLink>
+                    <NavLink role='uranus-link' className='uranus-link' style={uranusStyles} to="/Uranus"> Uranus </NavLink>
+                    <NavLink role='neptune-link' className='neptune-link' style={neptuneStyles} to="/Neptune"> Neptune </NavLink>
                 </nav>
 
-                <div onClick={BurgerNavClick} className='burger-nav'>
+                <div role='burger-nav' onClick={BurgerNavClick} className='burger-nav'>
                     <div className={burgerClass}></div>
                     <div className={burgerClass}></div>
                     <div className={burgerClass}></div>
                 </div>
 
-                <div className={menuClass}>
+                <div role='burger-navigation' className={menuClass}>
                     <ul>
-                        <NavLink onClick={BurgerNavClick} style={homeStyles} to="/"> 
+                        <NavLink role='home-link-mob' onClick={BurgerNavClick} style={homeStyles} to="/"> 
                             <li>
                                 <div>
                                     <div className='ball grey-bg'></div>
@@ -83,7 +84,7 @@ const NavBar = (props) => {
                                 </div>
                             </li>
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={mercuryStyles} to="/Mercury">                             
+                        <NavLink role='mercury-link-mob' onClick={BurgerNavClick} style={mercuryStyles} to="/Mercury">                             
                             <li>
                                 <div>
                                     <div className='ball baby-blue-bg'></div>
@@ -94,7 +95,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={venusStyles} to="/Venus"> 
+                        <NavLink role='venus-link-mob' onClick={BurgerNavClick} style={venusStyles} to="/Venus"> 
                             <li>
                                 <div>
                                     <div className='ball yellow-bg'></div>
@@ -105,7 +106,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={earthStyles} to="/Earth"> 
+                        <NavLink role='earth-link-mob' onClick={BurgerNavClick} style={earthStyles} to="/Earth"> 
                             <li>
                                 <div>
                                     <div className='ball light-purple-bg'></div>
@@ -116,7 +117,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={marsStyles} to="/Mars"> 
+                        <NavLink role='mars-link-mob' onClick={BurgerNavClick} style={marsStyles} to="/Mars"> 
                             <li>
                                 <div>
                                     <div className='ball orange-bg'></div>
@@ -127,7 +128,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={jupiterStyles} to="/Jupiter">
+                        <NavLink role='jupiter-link-mob' onClick={BurgerNavClick} style={jupiterStyles} to="/Jupiter">
                             <li>
                                 <div>
                                     <div className='ball red-bg'></div>
@@ -138,7 +139,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={saturnStyles} to="/Saturn">
+                        <NavLink role='saturn-link-mob' onClick={BurgerNavClick} style={saturnStyles} to="/Saturn">
                             <li>
                                 <div>
                                     <div className='ball dark-orange-bg'></div>
@@ -149,7 +150,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={uranusStyles} to="/Uranus">
+                        <NavLink role='uranus-link-mob' onClick={BurgerNavClick} style={uranusStyles} to="/Uranus">
                             <li>
                                 <div>
                                     <div className='ball green-bg'></div>
@@ -160,7 +161,7 @@ const NavBar = (props) => {
                                 </div>
                             </li> 
                         </NavLink>
-                        <NavLink onClick={BurgerNavClick} style={neptuneStyles} to="/Neptune">
+                        <NavLink role='neptune-link-mob' onClick={BurgerNavClick} style={neptuneStyles} to="/Neptune">
                             <li>
                                 <div>
                                     <div className='ball light-blue-bg'></div>

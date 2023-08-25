@@ -6,7 +6,7 @@ const PageMainTitle = (props) => {
 
     return(
         <>
-            <h2 className='pages-main-title'>{props.pageMainTitle}</h2>
+            <h2 role='page-main-title' className='pages-main-title'>{props.pageMainTitle}</h2>
         </>
     )
 }
