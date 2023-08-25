@@ -1,0 +1,27 @@
+.page-not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #929292;
+}
+.page-not-found-container h1 {
+    padding: 4rem;
+    font-size: 6rem;
+}
+.page-not-found-container h3 {
+    padding: 4rem;
+    font-size: 6rem;
+    text-transform: none;
+}
+.page-not-found-container p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.page-not-found-container a {
+    text-decoration: underline;
+    color: #929292;
+}
+.page-not-found-container a:hover {
+    color: #FFF;
+}
