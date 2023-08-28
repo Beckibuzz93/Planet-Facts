@@ -13,8 +13,6 @@ function App() {
         
         <Route index element={<Pages.LandingPage/>}></Route>
 
-        <Route path = "*" element={<Pages.PageNotFound/>}></Route>
-
         <Route path='/earth' element={<Components.EarthNav/>}>
           <Route index element={<Pages.EarthOverview/>}/>
           <Route path='structure' element={<Pages.EarthStructure/>} />
@@ -64,6 +62,8 @@ function App() {
         </Route>
 
       </Route>
+      
+      <Route path = "*" element={<Pages.PageNotFound/>}></Route>
     </Routes>
     </>
   )
