@@ -139,9 +139,9 @@
 }
 @media only screen and (min-width: 1300px) {
     .page-main-image {
-        animation: slideInLeft 4s ease;
-        -webkit-animation: slideInLeft 4s ease;
-    }
+        animation: slideInLeft 2.5s ease;
+        -webkit-animation: slideInLeft 2.5s ease;
+}
     .page-main-image.earth-img {
         transform: scale(0.65);
         -webkit-transform: scale(0.65);

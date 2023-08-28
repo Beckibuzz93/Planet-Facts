@@ -1,8 +1,8 @@
-@import url(../CSS/animations.css);
+@import url(../css/animations.css);
 
 .main-page-container {
-    animation: 4s ease-in-out slideInRight;
-    -webkit-animation: 4s ease-in-out slideInRight;
+    animation: 2.5s ease-in-out slideInRight;
+    -webkit-animation: 2.5s ease-in-out slideInRight;
 }
 
 @media only screen and (max-width: 760px) {
