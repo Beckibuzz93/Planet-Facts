@@ -2,8 +2,8 @@
 This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f).
 
 # Links
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-web-page-reactjs-react-router-dom-6GRG-9o6DH]()
+- Live Site URL: [https://planet-facts.onrender.com/]()
 
 # Description
 This application is a solution to the frontend mentor challenge cited above. 
