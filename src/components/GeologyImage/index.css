@@ -1,4 +1,7 @@
-
+.geo-img {
+    animation: fadeIn 4s ease;
+    -webkit-animation: fadeIn 4s ease;
+}
 @media only screen and (max-width: 760px) {
     .geology-image-container {
         width: 100%;

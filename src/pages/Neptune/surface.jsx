@@ -30,7 +30,7 @@ const NeptuneSurface = () => {
 
                 </div>
             </div>
-            <Components.PageMainInfo rotationTime='16.08 hours' revolutionTime='164.79 years' radius='24.622 km' avgTemp='-201°C'/>
+            <Components.PageMainInfo rotationTime='16.08 hours' revolutionTime='164.79 years' radius='24,622 km' avgTemp='-201°C'/>
         </>
     )
 }
